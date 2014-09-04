@@ -1,0 +1,1261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{22A40D91-3DFB-4029-B5AF-84FAA6FEC8D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WebMap</RootNamespace>
+    <AssemblyName>WebMap</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebMap.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebMap.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2brmrents.html" />
+    <Content Include="360.aspx" />
+    <Content Include="360b.aspx" />
+    <Content Include="360c.html" />
+    <Content Include="BusinessLocator.aspx" />
+    <Content Include="Calgary.aspx" />
+    <Content Include="config\defaults.js" />
+    <Content Include="css\default.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\main.css" />
+    <Content Include="default.aspx" />
+    <Content Include="DojoTest.aspx" />
+    <Content Include="EarthQuake.html" />
+    <Content Include="fonts\helveticaneue.svg" />
+    <Content Include="fonts\helveticaneueultralight.svg" />
+    <Content Include="fonts\steelfish-webfont.svg" />
+    <Content Include="GeoEnrichServices.html" />
+    <Content Include="images\360ResearchTool.png" />
+    <Content Include="images\360Tool.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\Appt_15px.png" />
+    <Content Include="images\BSP_HighRes-Print-33.jpg" />
+    <Content Include="images\car.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\default\2Bedroom.png" />
+    <Content Include="images\default\360_portal.png" />
+    <Content Include="images\default\Banner_Business-Intelligence_Rolling-Forecast.png" />
+    <Content Include="images\default\banner_BusinessIntel.jpg" />
+    <Content Include="images\default\digitalhands.jpg" />
+    <Content Include="images\default\SiteMap_Portal.png" />
+    <Content Include="images\demographics.png" />
+    <Content Include="images\directions.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\error.png" />
+    <Content Include="images\lifestyle.png" />
+    <Content Include="images\lifestyleb.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\Loadinglogo.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\MapHeader.png" />
+    <Content Include="images\mapicons\aboriginal.png" />
+    <Content Include="images\mapicons\acupuncture.png" />
+    <Content Include="images\mapicons\administration.png" />
+    <Content Include="images\mapicons\administrativeboundary.png" />
+    <Content Include="images\mapicons\aed-2.png" />
+    <Content Include="images\mapicons\agritourism.png" />
+    <Content Include="images\mapicons\aircraftcarrier.png" />
+    <Content Include="images\mapicons\airshow-2.png" />
+    <Content Include="images\mapicons\air_fixwing.png" />
+    <Content Include="images\mapicons\ambulance.png" />
+    <Content Include="images\mapicons\ambulanceboat.png" />
+    <Content Include="images\mapicons\amphitheater-2.png" />
+    <Content Include="images\mapicons\amphitheater.png" />
+    <Content Include="images\mapicons\anniversary.png" />
+    <Content Include="images\mapicons\anthropo.png" />
+    <Content Include="images\mapicons\apartment-3.png" />
+    <Content Include="images\mapicons\aquarium.png" />
+    <Content Include="images\mapicons\arch.png" />
+    <Content Include="images\mapicons\archery.png" />
+    <Content Include="images\mapicons\army.png" />
+    <Content Include="images\mapicons\art-museum-2.png" />
+    <Content Include="images\mapicons\atm-2.png" />
+    <Content Include="images\mapicons\atv.png" />
+    <Content Include="images\mapicons\australianfootball.png" />
+    <Content Include="images\mapicons\avalanche1.png" />
+    <Content Include="images\mapicons\badminton-2.png" />
+    <Content Include="images\mapicons\bank.png" />
+    <Content Include="images\mapicons\barber.png" />
+    <Content Include="images\mapicons\baseball.png" />
+    <Content Include="images\mapicons\basketball.png" />
+    <Content Include="images\mapicons\battleship-3.png" />
+    <Content Include="images\mapicons\beachvolleyball.png" />
+    <Content Include="images\mapicons\beautysalon.png" />
+    <Content Include="images\mapicons\bigcity.png" />
+    <Content Include="images\mapicons\bike_downhill.png" />
+    <Content Include="images\mapicons\bike_rising.png" />
+    <Content Include="images\mapicons\billiard-2.png" />
+    <Content Include="images\mapicons\boardercross.png" />
+    <Content Include="images\mapicons\boatcrane.png" />
+    <Content Include="images\mapicons\bobsleigh.png" />
+    <Content Include="images\mapicons\bollie.png" />
+    <Content Include="images\mapicons\bomber-2.png" />
+    <Content Include="images\mapicons\bouddha.png" />
+    <Content Include="images\mapicons\bowling.png" />
+    <Content Include="images\mapicons\boxing.png" />
+    <Content Include="images\mapicons\breastfeeding.png" />
+    <Content Include="images\mapicons\brewery1.png" />
+    <Content Include="images\mapicons\bridge_modern.png" />
+    <Content Include="images\mapicons\bridge_old.png" />
+    <Content Include="images\mapicons\bullfight.png" />
+    <Content Include="images\mapicons\bunker-2-2.png" />
+    <Content Include="images\mapicons\bunker.png" />
+    <Content Include="images\mapicons\bustour.png" />
+    <Content Include="images\mapicons\cabin-2.png" />
+    <Content Include="images\mapicons\campfire-2.png" />
+    <Content Include="images\mapicons\camping-2.png" />
+    <Content Include="images\mapicons\carrental.png" />
+    <Content Include="images\mapicons\casino-2.png" />
+    <Content Include="images\mapicons\castle-2.png" />
+    <Content Include="images\mapicons\cathedral.png" />
+    <Content Include="images\mapicons\catholicgrave.png" />
+    <Content Include="images\mapicons\cave-2.png" />
+    <Content Include="images\mapicons\cctv.png" />
+    <Content Include="images\mapicons\cemetary.png" />
+    <Content Include="images\mapicons\channelchange.png" />
+    <Content Include="images\mapicons\chapel-2.png" />
+    <Content Include="images\mapicons\chemistry-2.png" />
+    <Content Include="images\mapicons\chiropractor.png" />
+    <Content Include="images\mapicons\chronometer.png" />
+    <Content Include="images\mapicons\church-2.png" />
+    <Content Include="images\mapicons\cinema.png" />
+    <Content Include="images\mapicons\circus.png" />
+    <Content Include="images\mapicons\citysquare.png" />
+    <Content Include="images\mapicons\citywalls.png" />
+    <Content Include="images\mapicons\climbing.png" />
+    <Content Include="images\mapicons\clock.png" />
+    <Content Include="images\mapicons\coins.png" />
+    <Content Include="images\mapicons\coldfoodcheckpoint.png" />
+    <Content Include="images\mapicons\coldstorage.png" />
+    <Content Include="images\mapicons\comedyclub.png" />
+    <Content Include="images\mapicons\communitycentre.png" />
+    <Content Include="images\mapicons\company.png" />
+    <Content Include="images\mapicons\condominium.png" />
+    <Content Include="images\mapicons\conference.png" />
+    <Content Include="images\mapicons\congress.png" />
+    <Content Include="images\mapicons\construction.png" />
+    <Content Include="images\mapicons\constructioncrane.png" />
+    <Content Include="images\mapicons\contract.png" />
+    <Content Include="images\mapicons\convent-2.png" />
+    <Content Include="images\mapicons\country.png" />
+    <Content Include="images\mapicons\court.png" />
+    <Content Include="images\mapicons\cramschool.png" />
+    <Content Include="images\mapicons\crematorium.png" />
+    <Content Include="images\mapicons\cricket.png" />
+    <Content Include="images\mapicons\cromlech.png" />
+    <Content Include="images\mapicons\cross-2.png" />
+    <Content Include="images\mapicons\cruiseship.png" />
+    <Content Include="images\mapicons\cup.png" />
+    <Content Include="images\mapicons\curling-2.png" />
+    <Content Include="images\mapicons\currencyexchange.png" />
+    <Content Include="images\mapicons\customs.png" />
+    <Content Include="images\mapicons\cycling.png" />
+    <Content Include="images\mapicons\cycling_feed.png" />
+    <Content Include="images\mapicons\cycling_sprint.png" />
+    <Content Include="images\mapicons\dam.png" />
+    <Content Include="images\mapicons\dance_class.png" />
+    <Content Include="images\mapicons\dancinghall.png" />
+    <Content Include="images\mapicons\database.png" />
+    <Content Include="images\mapicons\daycare.png" />
+    <Content Include="images\mapicons\deepseafishing.png" />
+    <Content Include="images\mapicons\dentist.png" />
+    <Content Include="images\mapicons\dinopark.png" />
+    <Content Include="images\mapicons\disability.png" />
+    <Content Include="images\mapicons\discgolf.png" />
+    <Content Include="images\mapicons\diving.png" />
+    <Content Include="images\mapicons\dogs_leash.png" />
+    <Content Include="images\mapicons\dressingroom.png" />
+    <Content Include="images\mapicons\drinkingfountain.png" />
+    <Content Include="images\mapicons\drugstore.png" />
+    <Content Include="images\mapicons\elevator.png" />
+    <Content Include="images\mapicons\elevator_down.png" />
+    <Content Include="images\mapicons\elevator_up.png" />
+    <Content Include="images\mapicons\embassy.png" />
+    <Content Include="images\mapicons\emergencyphone.png" />
+    <Content Include="images\mapicons\entrance.png" />
+    <Content Include="images\mapicons\eu.png" />
+    <Content Include="images\mapicons\exchequer.png" />
+    <Content Include="images\mapicons\exit.png" />
+    <Content Include="images\mapicons\expert.png" />
+    <Content Include="images\mapicons\factory.png" />
+    <Content Include="images\mapicons\ferriswheel.png" />
+    <Content Include="images\mapicons\festival.png" />
+    <Content Include="images\mapicons\fetalalcoholsyndrom.png" />
+    <Content Include="images\mapicons\findajob.png" />
+    <Content Include="images\mapicons\finish.png" />
+    <Content Include="images\mapicons\fire-hydrant-2.png" />
+    <Content Include="images\mapicons\fireexstinguisher.png" />
+    <Content Include="images\mapicons\firemen.png" />
+    <Content Include="images\mapicons\fireworks.png" />
+    <Content Include="images\mapicons\firstaid.png" />
+    <Content Include="images\mapicons\fishing.png" />
+    <Content Include="images\mapicons\fishingboat.png" />
+    <Content Include="images\mapicons\fitness.png" />
+    <Content Include="images\mapicons\flag-export.png" />
+    <Content Include="images\mapicons\foodcan.png" />
+    <Content Include="images\mapicons\footprint.png" />
+    <Content Include="images\mapicons\ford-2.png" />
+    <Content Include="images\mapicons\forest.png" />
+    <Content Include="images\mapicons\foundry-2.png" />
+    <Content Include="images\mapicons\fountain-2.png" />
+    <Content Include="images\mapicons\fourbyfour.png" />
+    <Content Include="images\mapicons\freqchg.png" />
+    <Content Include="images\mapicons\fsb_marker.png" />
+    <Content Include="images\mapicons\ft.png" />
+    <Content Include="images\mapicons\gas_cylinder1.png" />
+    <Content Include="images\mapicons\gavel-auction-fw.png" />
+    <Content Include="images\mapicons\gendarmery_france.png" />
+    <Content Include="images\mapicons\geocaching-3.png" />
+    <Content Include="images\mapicons\geothermal-site.png" />
+    <Content Include="images\mapicons\ghosttown.png" />
+    <Content Include="images\mapicons\glasswater.png" />
+    <Content Include="images\mapicons\glazer.png" />
+    <Content Include="images\mapicons\golfing.png" />
+    <Content Include="images\mapicons\gondola-2.png" />
+    <Content Include="images\mapicons\group-2.png" />
+    <Content Include="images\mapicons\handball.png" />
+    <Content Include="images\mapicons\hanggliding.png" />
+    <Content Include="images\mapicons\headstone-2.png" />
+    <Content Include="images\mapicons\heating-and-aircon.png" />
+    <Content Include="images\mapicons\highschool.png" />
+    <Content Include="images\mapicons\hiking.png" />
+    <Content Include="images\mapicons\hiretools.png" />
+    <Content Include="images\mapicons\historicalquarter.png" />
+    <Content Include="images\mapicons\historical_museum.png" />
+    <Content Include="images\mapicons\hoergeraeteakustiker_22px.png" />
+    <Content Include="images\mapicons\hookah_final.png" />
+    <Content Include="images\mapicons\horseriding.png" />
+    <Content Include="images\mapicons\hospital-building.png" />
+    <Content Include="images\mapicons\hotfoodcheckpoint.png" />
+    <Content Include="images\mapicons\house.png" />
+    <Content Include="images\mapicons\hunting.png" />
+    <Content Include="images\mapicons\hut.png" />
+    <Content Include="images\mapicons\icehockey.png" />
+    <Content Include="images\mapicons\iceskating.png" />
+    <Content Include="images\mapicons\icon-nailsalon.png" />
+    <Content Include="images\mapicons\icon-sevilla.png" />
+    <Content Include="images\mapicons\indoor-arena.png" />
+    <Content Include="images\mapicons\information.png" />
+    <Content Include="images\mapicons\iobridge.png" />
+    <Content Include="images\mapicons\jacuzzi.png" />
+    <Content Include="images\mapicons\japanese-lantern.png" />
+    <Content Include="images\mapicons\japanese-temple.png" />
+    <Content Include="images\mapicons\jazzclub.png" />
+    <Content Include="images\mapicons\jeep.png" />
+    <Content Include="images\mapicons\jetfighter.png" />
+    <Content Include="images\mapicons\jewishgrave.png" />
+    <Content Include="images\mapicons\jewishquarter.png" />
+    <Content Include="images\mapicons\jogging.png" />
+    <Content Include="images\mapicons\judo.png" />
+    <Content Include="images\mapicons\karate.png" />
+    <Content Include="images\mapicons\karting.png" />
+    <Content Include="images\mapicons\kayaking.png" />
+    <Content Include="images\mapicons\kitchen.png" />
+    <Content Include="images\mapicons\kitesurfing.png" />
+    <Content Include="images\mapicons\laboratory.png" />
+    <Content Include="images\mapicons\landfill.png" />
+    <Content Include="images\mapicons\landmark.png" />
+    <Content Include="images\mapicons\laterne.png" />
+    <Content Include="images\mapicons\latrine.png" />
+    <Content Include="images\mapicons\laundromat.png" />
+    <Content Include="images\mapicons\library.png" />
+    <Content Include="images\mapicons\lifeguard-2.png" />
+    <Content Include="images\mapicons\lighthouse-2.png" />
+    <Content Include="images\mapicons\linedown.png" />
+    <Content Include="images\mapicons\lock.png" />
+    <Content Include="images\mapicons\lockerrental.png" />
+    <Content Include="images\mapicons\lockerroom.png" />
+    <Content Include="images\mapicons\magicshow.png" />
+    <Content Include="images\mapicons\map.png" />
+    <Content Include="images\mapicons\mapicon.png" />
+    <Content Include="images\mapicons\marijuana.png" />
+    <Content Include="images\mapicons\marina-2.png" />
+    <Content Include="images\mapicons\massage.png" />
+    <Content Include="images\mapicons\mastcrane1.png" />
+    <Content Include="images\mapicons\medicalstore.png" />
+    <Content Include="images\mapicons\medicine.png" />
+    <Content Include="images\mapicons\megalith.png" />
+    <Content Include="images\mapicons\memorial.png" />
+    <Content Include="images\mapicons\metronetwork.png" />
+    <Content Include="images\mapicons\military.png" />
+    <Content Include="images\mapicons\mine.png" />
+    <Content Include="images\mapicons\missile-2.png" />
+    <Content Include="images\mapicons\mobilephonetower.png" />
+    <Content Include="images\mapicons\modernmonument.png" />
+    <Content Include="images\mapicons\moderntower.png" />
+    <Content Include="images\mapicons\monument-historique-icon-white-22x22.png" />
+    <Content Include="images\mapicons\monument.png" />
+    <Content Include="images\mapicons\mosquee.png" />
+    <Content Include="images\mapicons\motorbike.png" />
+    <Content Include="images\mapicons\mountainbiking-3.png" />
+    <Content Include="images\mapicons\mountains_cathc.png" />
+    <Content Include="images\mapicons\moving-walkway-enter-export.png" />
+    <Content Include="images\mapicons\mural.png" />
+    <Content Include="images\mapicons\museum_archeological.png" />
+    <Content Include="images\mapicons\museum_art.png" />
+    <Content Include="images\mapicons\museum_crafts.png" />
+    <Content Include="images\mapicons\museum_industry.png" />
+    <Content Include="images\mapicons\museum_naval.png" />
+    <Content Include="images\mapicons\museum_openair.png" />
+    <Content Include="images\mapicons\museum_science.png" />
+    <Content Include="images\mapicons\museum_war.png" />
+    <Content Include="images\mapicons\music_choral.png" />
+    <Content Include="images\mapicons\music_classical.png" />
+    <Content Include="images\mapicons\music_hiphop.png" />
+    <Content Include="images\mapicons\music_live.png" />
+    <Content Include="images\mapicons\music_rock.png" />
+    <Content Include="images\mapicons\nanny.png" />
+    <Content Include="images\mapicons\ne_barn-2.png" />
+    <Content Include="images\mapicons\no-nuke-export.png" />
+    <Content Include="images\mapicons\nordicski.png" />
+    <Content Include="images\mapicons\notvisited.png" />
+    <Content Include="images\mapicons\nursery.png" />
+    <Content Include="images\mapicons\nursing_home_icon.png" />
+    <Content Include="images\mapicons\observatory.png" />
+    <Content Include="images\mapicons\ododow.png" />
+    <Content Include="images\mapicons\office-building.png" />
+    <Content Include="images\mapicons\oilpumpjack.png" />
+    <Content Include="images\mapicons\oilrig2.png" />
+    <Content Include="images\mapicons\olympicsite.png" />
+    <Content Include="images\mapicons\ophthalmologist.png" />
+    <Content Include="images\mapicons\orienteering.png" />
+    <Content Include="images\mapicons\outlet2.png" />
+    <Content Include="images\mapicons\pagoda-2.png" />
+    <Content Include="images\mapicons\paintball.png" />
+    <Content Include="images\mapicons\palace-2.png" />
+    <Content Include="images\mapicons\palm-tree-export.png" />
+    <Content Include="images\mapicons\panoramicview.png" />
+    <Content Include="images\mapicons\paragliding.png" />
+    <Content Include="images\mapicons\parasailing.png" />
+    <Content Include="images\mapicons\party-2.png" />
+    <Content Include="images\mapicons\petanque.png" />
+    <Content Include="images\mapicons\petroglyphs-2.png" />
+    <Content Include="images\mapicons\picnic-2.png" />
+    <Content Include="images\mapicons\pin-export.png" />
+    <Content Include="images\mapicons\planetarium-2.png" />
+    <Content Include="images\mapicons\plastering-icon.png" />
+    <Content Include="images\mapicons\pleasurepier.png" />
+    <Content Include="images\mapicons\poker.png" />
+    <Content Include="images\mapicons\police.png" />
+    <Content Include="images\mapicons\pond.png" />
+    <Content Include="images\mapicons\postal.png" />
+    <Content Include="images\mapicons\powerlinepole.png" />
+    <Content Include="images\mapicons\poweroutage.png" />
+    <Content Include="images\mapicons\powerplant.png" />
+    <Content Include="images\mapicons\powersubstation.png" />
+    <Content Include="images\mapicons\prayer.png" />
+    <Content Include="images\mapicons\presentation.png" />
+    <Content Include="images\mapicons\printer-2.png" />
+    <Content Include="images\mapicons\prison.png" />
+    <Content Include="images\mapicons\publicart.png" />
+    <Content Include="images\mapicons\pyramid.png" />
+    <Content Include="images\mapicons\radar.png" />
+    <Content Include="images\mapicons\radio-control-model-car.png" />
+    <Content Include="images\mapicons\radio-station-2.png" />
+    <Content Include="images\mapicons\recycle.png" />
+    <Content Include="images\mapicons\regroup.png" />
+    <Content Include="images\mapicons\rockhouse.png" />
+    <Content Include="images\mapicons\rollerblade.png" />
+    <Content Include="images\mapicons\rollerskate.png" />
+    <Content Include="images\mapicons\ropescourse.png" />
+    <Content Include="images\mapicons\rowboat.png" />
+    <Content Include="images\mapicons\rugbyfield.png" />
+    <Content Include="images\mapicons\ruins-2.png" />
+    <Content Include="images\mapicons\rupee-icon.png" />
+    <Content Include="images\mapicons\sailing.png" />
+    <Content Include="images\mapicons\satellite-dish.png" />
+    <Content Include="images\mapicons\sauna.png" />
+    <Content Include="images\mapicons\sawmill-2.png" />
+    <Content Include="images\mapicons\school.png" />
+    <Content Include="images\mapicons\scubadiving.png" />
+    <Content Include="images\mapicons\segway.png" />
+    <Content Include="images\mapicons\seniorsite.png" />
+    <Content Include="images\mapicons\septic_tank.png" />
+    <Content Include="images\mapicons\shintoshrine.png" />
+    <Content Include="images\mapicons\shipwreck.png" />
+    <Content Include="images\mapicons\shooting.png" />
+    <Content Include="images\mapicons\shootingrange.png" />
+    <Content Include="images\mapicons\shower.png" />
+    <Content Include="images\mapicons\sight-2.png" />
+    <Content Include="images\mapicons\signpost-2.png" />
+    <Content Include="images\mapicons\sikh.png" />
+    <Content Include="images\mapicons\skiing.png" />
+    <Content Include="images\mapicons\skijump.png" />
+    <Content Include="images\mapicons\skilifting.png" />
+    <Content Include="images\mapicons\sleddog.png" />
+    <Content Include="images\mapicons\sledge.png" />
+    <Content Include="images\mapicons\sledge_summer.png" />
+    <Content Include="images\mapicons\smallcity.png" />
+    <Content Include="images\mapicons\smoking.png" />
+    <Content Include="images\mapicons\snorkeling.png" />
+    <Content Include="images\mapicons\snowboarding.png" />
+    <Content Include="images\mapicons\snowmobiling.png" />
+    <Content Include="images\mapicons\snowpark_arc.png" />
+    <Content Include="images\mapicons\snowshoeing.png" />
+    <Content Include="images\mapicons\soccer.png" />
+    <Content Include="images\mapicons\solarenergy.png" />
+    <Content Include="images\mapicons\sozialeeinrichtung.png" />
+    <Content Include="images\mapicons\spa.png" />
+    <Content Include="images\mapicons\spaceport-2.png" />
+    <Content Include="images\mapicons\speedriding.png" />
+    <Content Include="images\mapicons\spelunking.png" />
+    <Content Include="images\mapicons\splice.png" />
+    <Content Include="images\mapicons\sponge.png" />
+    <Content Include="images\mapicons\sportscar.png" />
+    <Content Include="images\mapicons\sportutilityvehicle.png" />
+    <Content Include="images\mapicons\square-compass.png" />
+    <Content Include="images\mapicons\squash-2.png" />
+    <Content Include="images\mapicons\st-margarets-cross-map-icon-22-x-22.png" />
+    <Content Include="images\mapicons\stadium.png" />
+    <Content Include="images\mapicons\stairs.png" />
+    <Content Include="images\mapicons\star-3.png" />
+    <Content Include="images\mapicons\start-race-2.png" />
+    <Content Include="images\mapicons\statue-2.png" />
+    <Content Include="images\mapicons\stripclub2.png" />
+    <Content Include="images\mapicons\submarine-2.png" />
+    <Content Include="images\mapicons\summercamp.png" />
+    <Content Include="images\mapicons\sumo-2.png" />
+    <Content Include="images\mapicons\surfacelift.png" />
+    <Content Include="images\mapicons\surfing.png" />
+    <Content Include="images\mapicons\surfpaddle.png" />
+    <Content Include="images\mapicons\surveying-2.png" />
+    <Content Include="images\mapicons\swimming.png" />
+    <Content Include="images\mapicons\synagogue-2.png" />
+    <Content Include="images\mapicons\taekwondo-2.png" />
+    <Content Include="images\mapicons\targ.png" />
+    <Content Include="images\mapicons\tebletennis.png" />
+    <Content Include="images\mapicons\telephone.png" />
+    <Content Include="images\mapicons\temple-2.png" />
+    <Content Include="images\mapicons\templehindu.png" />
+    <Content Include="images\mapicons\tennis.png" />
+    <Content Include="images\mapicons\theater.png" />
+    <Content Include="images\mapicons\themepark.png" />
+    <Content Include="images\mapicons\therapy.png" />
+    <Content Include="images\mapicons\theravadapagoda.png" />
+    <Content Include="images\mapicons\theravadatemple.png" />
+    <Content Include="images\mapicons\toilets.png" />
+    <Content Include="images\mapicons\tower.png" />
+    <Content Include="images\mapicons\townhouse.png" />
+    <Content Include="images\mapicons\trash.png" />
+    <Content Include="images\mapicons\treasure-mark.png" />
+    <Content Include="images\mapicons\triskelion.png" />
+    <Content Include="images\mapicons\university.png" />
+    <Content Include="images\mapicons\usfootball.png" />
+    <Content Include="images\mapicons\veterinary.png" />
+    <Content Include="images\mapicons\videogames.png" />
+    <Content Include="images\mapicons\volleyball.png" />
+    <Content Include="images\mapicons\waco.png" />
+    <Content Include="images\mapicons\waiting.png" />
+    <Content Include="images\mapicons\walkingtour.png" />
+    <Content Include="images\mapicons\wandhydrant.png" />
+    <Content Include="images\mapicons\warehouse-2.png" />
+    <Content Include="images\mapicons\watercraft.png" />
+    <Content Include="images\mapicons\waterpark.png" />
+    <Content Include="images\mapicons\waterskiing.png" />
+    <Content Include="images\mapicons\watertower.png" />
+    <Content Include="images\mapicons\weights.png" />
+    <Content Include="images\mapicons\wifi.png" />
+    <Content Include="images\mapicons\windsurfing.png" />
+    <Content Include="images\mapicons\windturbine.png" />
+    <Content Include="images\mapicons\workoffice.png" />
+    <Content Include="images\mapicons\workshop.png" />
+    <Content Include="images\mapicons\world.png" />
+    <Content Include="images\mapicons\worldheritagesite.png" />
+    <Content Include="images\mapicons\wrestling-2.png" />
+    <Content Include="images\mapicons\x-ray.png" />
+    <Content Include="images\mapicons\yoga.png" />
+    <Content Include="images\mapicons\yooner.png" />
+    <Content Include="images\mapicons\you-are-here-2.png" />
+    <Content Include="images\mapicons\zoo.png" />
+    <Content Include="images\menu.png" />
+    <Content Include="images\pin.png" />
+    <Content Include="images\reverse.png" />
+    <Content Include="images\rmd_commercial.png" />
+    <Content Include="images\rmd_private.png" />
+    <Content Include="images\sideicons\aboriginal.png" />
+    <Content Include="images\sideicons\acupuncture.png" />
+    <Content Include="images\sideicons\administration.png" />
+    <Content Include="images\sideicons\administrativeboundary.png" />
+    <Content Include="images\sideicons\aed-2.png" />
+    <Content Include="images\sideicons\agritourism.png" />
+    <Content Include="images\sideicons\aircraftcarrier.png" />
+    <Content Include="images\sideicons\airshow-2.png" />
+    <Content Include="images\sideicons\air_fixwing.png" />
+    <Content Include="images\sideicons\ambulance.png" />
+    <Content Include="images\sideicons\ambulanceboat.png" />
+    <Content Include="images\sideicons\amphitheater-2.png" />
+    <Content Include="images\sideicons\amphitheater.png" />
+    <Content Include="images\sideicons\anniversary.png" />
+    <Content Include="images\sideicons\anthropo.png" />
+    <Content Include="images\sideicons\apartment-3.png" />
+    <Content Include="images\sideicons\aquarium.png" />
+    <Content Include="images\sideicons\arch.png" />
+    <Content Include="images\sideicons\archery.png" />
+    <Content Include="images\sideicons\army.png" />
+    <Content Include="images\sideicons\art-museum-2.png" />
+    <Content Include="images\sideicons\atm-2.png" />
+    <Content Include="images\sideicons\atv.png" />
+    <Content Include="images\sideicons\australianfootball.png" />
+    <Content Include="images\sideicons\avalanche1.png" />
+    <Content Include="images\sideicons\badminton-2.png" />
+    <Content Include="images\sideicons\bank.png" />
+    <Content Include="images\sideicons\barber.png" />
+    <Content Include="images\sideicons\baseball.png" />
+    <Content Include="images\sideicons\basketball.png" />
+    <Content Include="images\sideicons\battleship-3.png" />
+    <Content Include="images\sideicons\beachvolleyball.png" />
+    <Content Include="images\sideicons\beautysalon.png" />
+    <Content Include="images\sideicons\bigcity.png" />
+    <Content Include="images\sideicons\bike_downhill.png" />
+    <Content Include="images\sideicons\bike_rising.png" />
+    <Content Include="images\sideicons\billiard-2.png" />
+    <Content Include="images\sideicons\boardercross.png" />
+    <Content Include="images\sideicons\boatcrane.png" />
+    <Content Include="images\sideicons\bobsleigh.png" />
+    <Content Include="images\sideicons\bollie.png" />
+    <Content Include="images\sideicons\bomber-2.png" />
+    <Content Include="images\sideicons\bouddha.png" />
+    <Content Include="images\sideicons\bowling.png" />
+    <Content Include="images\sideicons\boxing.png" />
+    <Content Include="images\sideicons\breastfeeding.png" />
+    <Content Include="images\sideicons\brewery1.png" />
+    <Content Include="images\sideicons\bridge_modern.png" />
+    <Content Include="images\sideicons\bridge_old.png" />
+    <Content Include="images\sideicons\bullfight.png" />
+    <Content Include="images\sideicons\bunker-2-2.png" />
+    <Content Include="images\sideicons\bunker.png" />
+    <Content Include="images\sideicons\bustour.png" />
+    <Content Include="images\sideicons\cabin-2.png" />
+    <Content Include="images\sideicons\campfire-2.png" />
+    <Content Include="images\sideicons\camping-2.png" />
+    <Content Include="images\sideicons\carrental.png" />
+    <Content Include="images\sideicons\casino-2.png" />
+    <Content Include="images\sideicons\castle-2.png" />
+    <Content Include="images\sideicons\cathedral.png" />
+    <Content Include="images\sideicons\catholicgrave.png" />
+    <Content Include="images\sideicons\cave-2.png" />
+    <Content Include="images\sideicons\cctv.png" />
+    <Content Include="images\sideicons\cemetary.png" />
+    <Content Include="images\sideicons\channelchange.png" />
+    <Content Include="images\sideicons\chapel-2.png" />
+    <Content Include="images\sideicons\chemistry-2.png" />
+    <Content Include="images\sideicons\chiropractor.png" />
+    <Content Include="images\sideicons\chronometer.png" />
+    <Content Include="images\sideicons\church-2.png" />
+    <Content Include="images\sideicons\cinema.png" />
+    <Content Include="images\sideicons\circus.png" />
+    <Content Include="images\sideicons\citysquare.png" />
+    <Content Include="images\sideicons\citywalls.png" />
+    <Content Include="images\sideicons\climbing.png" />
+    <Content Include="images\sideicons\clock.png" />
+    <Content Include="images\sideicons\coins.png" />
+    <Content Include="images\sideicons\coldfoodcheckpoint.png" />
+    <Content Include="images\sideicons\coldstorage.png" />
+    <Content Include="images\sideicons\comedyclub.png" />
+    <Content Include="images\sideicons\communitycentre.png" />
+    <Content Include="images\sideicons\company.png" />
+    <Content Include="images\sideicons\condominium.png" />
+    <Content Include="images\sideicons\conference.png" />
+    <Content Include="images\sideicons\congress.png" />
+    <Content Include="images\sideicons\construction.png" />
+    <Content Include="images\sideicons\constructioncrane.png" />
+    <Content Include="images\sideicons\contract.png" />
+    <Content Include="images\sideicons\convent-2.png" />
+    <Content Include="images\sideicons\country.png" />
+    <Content Include="images\sideicons\court.png" />
+    <Content Include="images\sideicons\cramschool.png" />
+    <Content Include="images\sideicons\crematorium.png" />
+    <Content Include="images\sideicons\cricket.png" />
+    <Content Include="images\sideicons\cromlech.png" />
+    <Content Include="images\sideicons\cross-2.png" />
+    <Content Include="images\sideicons\cruiseship.png" />
+    <Content Include="images\sideicons\cup.png" />
+    <Content Include="images\sideicons\curling-2.png" />
+    <Content Include="images\sideicons\currencyexchange.png" />
+    <Content Include="images\sideicons\customs.png" />
+    <Content Include="images\sideicons\cycling.png" />
+    <Content Include="images\sideicons\cycling_feed.png" />
+    <Content Include="images\sideicons\cycling_sprint.png" />
+    <Content Include="images\sideicons\dam.png" />
+    <Content Include="images\sideicons\dance_class.png" />
+    <Content Include="images\sideicons\dancinghall.png" />
+    <Content Include="images\sideicons\database.png" />
+    <Content Include="images\sideicons\daycare.png" />
+    <Content Include="images\sideicons\deepseafishing.png" />
+    <Content Include="images\sideicons\dentist.png" />
+    <Content Include="images\sideicons\dinopark.png" />
+    <Content Include="images\sideicons\disability.png" />
+    <Content Include="images\sideicons\discgolf.png" />
+    <Content Include="images\sideicons\diving.png" />
+    <Content Include="images\sideicons\dogs_leash.png" />
+    <Content Include="images\sideicons\dressingroom.png" />
+    <Content Include="images\sideicons\drinkingfountain.png" />
+    <Content Include="images\sideicons\drugstore.png" />
+    <Content Include="images\sideicons\elevator.png" />
+    <Content Include="images\sideicons\elevator_down.png" />
+    <Content Include="images\sideicons\elevator_up.png" />
+    <Content Include="images\sideicons\embassy.png" />
+    <Content Include="images\sideicons\emergencyphone.png" />
+    <Content Include="images\sideicons\entrance.png" />
+    <Content Include="images\sideicons\eu.png" />
+    <Content Include="images\sideicons\exchequer.png" />
+    <Content Include="images\sideicons\exit.png" />
+    <Content Include="images\sideicons\expert.png" />
+    <Content Include="images\sideicons\factory.png" />
+    <Content Include="images\sideicons\ferriswheel.png" />
+    <Content Include="images\sideicons\festival.png" />
+    <Content Include="images\sideicons\fetalalcoholsyndrom.png" />
+    <Content Include="images\sideicons\findajob.png" />
+    <Content Include="images\sideicons\finish.png" />
+    <Content Include="images\sideicons\fire-hydrant-2.png" />
+    <Content Include="images\sideicons\fireexstinguisher.png" />
+    <Content Include="images\sideicons\firemen.png" />
+    <Content Include="images\sideicons\fireworks.png" />
+    <Content Include="images\sideicons\firstaid.png" />
+    <Content Include="images\sideicons\fishing.png" />
+    <Content Include="images\sideicons\fishingboat.png" />
+    <Content Include="images\sideicons\fitness.png" />
+    <Content Include="images\sideicons\flag-export.png" />
+    <Content Include="images\sideicons\foodcan.png" />
+    <Content Include="images\sideicons\footprint.png" />
+    <Content Include="images\sideicons\ford-2.png" />
+    <Content Include="images\sideicons\forest.png" />
+    <Content Include="images\sideicons\foundry-2.png" />
+    <Content Include="images\sideicons\fountain-2.png" />
+    <Content Include="images\sideicons\fourbyfour.png" />
+    <Content Include="images\sideicons\freqchg.png" />
+    <Content Include="images\sideicons\fsb_marker.png" />
+    <Content Include="images\sideicons\ft.png" />
+    <Content Include="images\sideicons\gas_cylinder1.png" />
+    <Content Include="images\sideicons\gavel-auction-fw.png" />
+    <Content Include="images\sideicons\gendarmery_france.png" />
+    <Content Include="images\sideicons\geocaching-3.png" />
+    <Content Include="images\sideicons\geothermal-site.png" />
+    <Content Include="images\sideicons\ghosttown.png" />
+    <Content Include="images\sideicons\glasswater.png" />
+    <Content Include="images\sideicons\glazer.png" />
+    <Content Include="images\sideicons\golfing.png" />
+    <Content Include="images\sideicons\gondola-2.png" />
+    <Content Include="images\sideicons\group-2.png" />
+    <Content Include="images\sideicons\handball.png" />
+    <Content Include="images\sideicons\hanggliding.png" />
+    <Content Include="images\sideicons\headstone-2.png" />
+    <Content Include="images\sideicons\heating-and-aircon.png" />
+    <Content Include="images\sideicons\highschool.png" />
+    <Content Include="images\sideicons\hiking.png" />
+    <Content Include="images\sideicons\hiretools.png" />
+    <Content Include="images\sideicons\historicalquarter.png" />
+    <Content Include="images\sideicons\historical_museum.png" />
+    <Content Include="images\sideicons\hoergeraeteakustiker_22px.png" />
+    <Content Include="images\sideicons\hookah_final.png" />
+    <Content Include="images\sideicons\horseriding.png" />
+    <Content Include="images\sideicons\hospital-building.png" />
+    <Content Include="images\sideicons\hotfoodcheckpoint.png" />
+    <Content Include="images\sideicons\house.png" />
+    <Content Include="images\sideicons\hunting.png" />
+    <Content Include="images\sideicons\hut.png" />
+    <Content Include="images\sideicons\icehockey.png" />
+    <Content Include="images\sideicons\iceskating.png" />
+    <Content Include="images\sideicons\icon-nailsalon.png" />
+    <Content Include="images\sideicons\icon-sevilla.png" />
+    <Content Include="images\sideicons\indoor-arena.png" />
+    <Content Include="images\sideicons\information.png" />
+    <Content Include="images\sideicons\iobridge.png" />
+    <Content Include="images\sideicons\jacuzzi.png" />
+    <Content Include="images\sideicons\japanese-lantern.png" />
+    <Content Include="images\sideicons\japanese-temple.png" />
+    <Content Include="images\sideicons\jazzclub.png" />
+    <Content Include="images\sideicons\jeep.png" />
+    <Content Include="images\sideicons\jetfighter.png" />
+    <Content Include="images\sideicons\jewishgrave.png" />
+    <Content Include="images\sideicons\jewishquarter.png" />
+    <Content Include="images\sideicons\jogging.png" />
+    <Content Include="images\sideicons\judo.png" />
+    <Content Include="images\sideicons\karate.png" />
+    <Content Include="images\sideicons\karting.png" />
+    <Content Include="images\sideicons\kayaking.png" />
+    <Content Include="images\sideicons\kitchen.png" />
+    <Content Include="images\sideicons\kitesurfing.png" />
+    <Content Include="images\sideicons\laboratory.png" />
+    <Content Include="images\sideicons\landfill.png" />
+    <Content Include="images\sideicons\landmark.png" />
+    <Content Include="images\sideicons\laterne.png" />
+    <Content Include="images\sideicons\latrine.png" />
+    <Content Include="images\sideicons\laundromat.png" />
+    <Content Include="images\sideicons\library.png" />
+    <Content Include="images\sideicons\lifeguard-2.png" />
+    <Content Include="images\sideicons\lighthouse-2.png" />
+    <Content Include="images\sideicons\linedown.png" />
+    <Content Include="images\sideicons\lock.png" />
+    <Content Include="images\sideicons\lockerrental.png" />
+    <Content Include="images\sideicons\lockerroom.png" />
+    <Content Include="images\sideicons\magicshow.png" />
+    <Content Include="images\sideicons\map.png" />
+    <Content Include="images\sideicons\mapicon.png" />
+    <Content Include="images\sideicons\marijuana.png" />
+    <Content Include="images\sideicons\marina-2.png" />
+    <Content Include="images\sideicons\massage.png" />
+    <Content Include="images\sideicons\mastcrane1.png" />
+    <Content Include="images\sideicons\medicalstore.png" />
+    <Content Include="images\sideicons\medicine.png" />
+    <Content Include="images\sideicons\megalith.png" />
+    <Content Include="images\sideicons\memorial.png" />
+    <Content Include="images\sideicons\metronetwork.png" />
+    <Content Include="images\sideicons\military.png" />
+    <Content Include="images\sideicons\mine.png" />
+    <Content Include="images\sideicons\missile-2.png" />
+    <Content Include="images\sideicons\mobilephonetower.png" />
+    <Content Include="images\sideicons\modernmonument.png" />
+    <Content Include="images\sideicons\moderntower.png" />
+    <Content Include="images\sideicons\monument-historique-icon-white-22x22.png" />
+    <Content Include="images\sideicons\monument.png" />
+    <Content Include="images\sideicons\mosquee.png" />
+    <Content Include="images\sideicons\motorbike.png" />
+    <Content Include="images\sideicons\mountainbiking-3.png" />
+    <Content Include="images\sideicons\mountains_cathc.png" />
+    <Content Include="images\sideicons\moving-walkway-enter-export.png" />
+    <Content Include="images\sideicons\mural.png" />
+    <Content Include="images\sideicons\museum_archeological.png" />
+    <Content Include="images\sideicons\museum_art.png" />
+    <Content Include="images\sideicons\museum_crafts.png" />
+    <Content Include="images\sideicons\museum_industry.png" />
+    <Content Include="images\sideicons\museum_naval.png" />
+    <Content Include="images\sideicons\museum_openair.png" />
+    <Content Include="images\sideicons\museum_science.png" />
+    <Content Include="images\sideicons\museum_war.png" />
+    <Content Include="images\sideicons\music_choral.png" />
+    <Content Include="images\sideicons\music_classical.png" />
+    <Content Include="images\sideicons\music_hiphop.png" />
+    <Content Include="images\sideicons\music_live.png" />
+    <Content Include="images\sideicons\music_rock.png" />
+    <Content Include="images\sideicons\nanny.png" />
+    <Content Include="images\sideicons\ne_barn-2.png" />
+    <Content Include="images\sideicons\no-nuke-export.png" />
+    <Content Include="images\sideicons\nordicski.png" />
+    <Content Include="images\sideicons\notvisited.png" />
+    <Content Include="images\sideicons\nursery.png" />
+    <Content Include="images\sideicons\nursing_home_icon.png" />
+    <Content Include="images\sideicons\observatory.png" />
+    <Content Include="images\sideicons\ododow.png" />
+    <Content Include="images\sideicons\office-building.png" />
+    <Content Include="images\sideicons\oilpumpjack.png" />
+    <Content Include="images\sideicons\oilrig2.png" />
+    <Content Include="images\sideicons\olympicsite.png" />
+    <Content Include="images\sideicons\ophthalmologist.png" />
+    <Content Include="images\sideicons\orienteering.png" />
+    <Content Include="images\sideicons\outlet2.png" />
+    <Content Include="images\sideicons\pagoda-2.png" />
+    <Content Include="images\sideicons\paintball.png" />
+    <Content Include="images\sideicons\palace-2.png" />
+    <Content Include="images\sideicons\palm-tree-export.png" />
+    <Content Include="images\sideicons\panoramicview.png" />
+    <Content Include="images\sideicons\paragliding.png" />
+    <Content Include="images\sideicons\parasailing.png" />
+    <Content Include="images\sideicons\party-2.png" />
+    <Content Include="images\sideicons\petanque.png" />
+    <Content Include="images\sideicons\petroglyphs-2.png" />
+    <Content Include="images\sideicons\picnic-2.png" />
+    <Content Include="images\sideicons\pin-export.png" />
+    <Content Include="images\sideicons\planetarium-2.png" />
+    <Content Include="images\sideicons\plastering-icon.png" />
+    <Content Include="images\sideicons\pleasurepier.png" />
+    <Content Include="images\sideicons\poker.png" />
+    <Content Include="images\sideicons\police.png" />
+    <Content Include="images\sideicons\pond.png" />
+    <Content Include="images\sideicons\postal.png" />
+    <Content Include="images\sideicons\powerlinepole.png" />
+    <Content Include="images\sideicons\poweroutage.png" />
+    <Content Include="images\sideicons\powerplant.png" />
+    <Content Include="images\sideicons\powersubstation.png" />
+    <Content Include="images\sideicons\prayer.png" />
+    <Content Include="images\sideicons\presentation.png" />
+    <Content Include="images\sideicons\printer-2.png" />
+    <Content Include="images\sideicons\prison.png" />
+    <Content Include="images\sideicons\publicart.png" />
+    <Content Include="images\sideicons\pyramid.png" />
+    <Content Include="images\sideicons\radar.png" />
+    <Content Include="images\sideicons\radio-control-model-car.png" />
+    <Content Include="images\sideicons\radio-station-2.png" />
+    <Content Include="images\sideicons\recycle.png" />
+    <Content Include="images\sideicons\regroup.png" />
+    <Content Include="images\sideicons\rockhouse.png" />
+    <Content Include="images\sideicons\rollerblade.png" />
+    <Content Include="images\sideicons\rollerskate.png" />
+    <Content Include="images\sideicons\ropescourse.png" />
+    <Content Include="images\sideicons\rowboat.png" />
+    <Content Include="images\sideicons\rugbyfield.png" />
+    <Content Include="images\sideicons\ruins-2.png" />
+    <Content Include="images\sideicons\rupee-icon.png" />
+    <Content Include="images\sideicons\sailing.png" />
+    <Content Include="images\sideicons\satellite-dish.png" />
+    <Content Include="images\sideicons\sauna.png" />
+    <Content Include="images\sideicons\sawmill-2.png" />
+    <Content Include="images\sideicons\school.png" />
+    <Content Include="images\sideicons\scubadiving.png" />
+    <Content Include="images\sideicons\segway.png" />
+    <Content Include="images\sideicons\seniorsite.png" />
+    <Content Include="images\sideicons\septic_tank.png" />
+    <Content Include="images\sideicons\shintoshrine.png" />
+    <Content Include="images\sideicons\shipwreck.png" />
+    <Content Include="images\sideicons\shooting.png" />
+    <Content Include="images\sideicons\shootingrange.png" />
+    <Content Include="images\sideicons\shower.png" />
+    <Content Include="images\sideicons\sight-2.png" />
+    <Content Include="images\sideicons\signpost-2.png" />
+    <Content Include="images\sideicons\sikh.png" />
+    <Content Include="images\sideicons\skiing.png" />
+    <Content Include="images\sideicons\skijump.png" />
+    <Content Include="images\sideicons\skilifting.png" />
+    <Content Include="images\sideicons\sleddog.png" />
+    <Content Include="images\sideicons\sledge.png" />
+    <Content Include="images\sideicons\sledge_summer.png" />
+    <Content Include="images\sideicons\smallcity.png" />
+    <Content Include="images\sideicons\smoking.png" />
+    <Content Include="images\sideicons\snorkeling.png" />
+    <Content Include="images\sideicons\snowboarding.png" />
+    <Content Include="images\sideicons\snowmobiling.png" />
+    <Content Include="images\sideicons\snowpark_arc.png" />
+    <Content Include="images\sideicons\snowshoeing.png" />
+    <Content Include="images\sideicons\soccer.png" />
+    <Content Include="images\sideicons\solarenergy.png" />
+    <Content Include="images\sideicons\sozialeeinrichtung.png" />
+    <Content Include="images\sideicons\spa.png" />
+    <Content Include="images\sideicons\spaceport-2.png" />
+    <Content Include="images\sideicons\speedriding.png" />
+    <Content Include="images\sideicons\spelunking.png" />
+    <Content Include="images\sideicons\splice.png" />
+    <Content Include="images\sideicons\sponge.png" />
+    <Content Include="images\sideicons\sportscar.png" />
+    <Content Include="images\sideicons\sportutilityvehicle.png" />
+    <Content Include="images\sideicons\square-compass.png" />
+    <Content Include="images\sideicons\squash-2.png" />
+    <Content Include="images\sideicons\st-margarets-cross-map-icon-22-x-22.png" />
+    <Content Include="images\sideicons\stadium.png" />
+    <Content Include="images\sideicons\stairs.png" />
+    <Content Include="images\sideicons\star-3.png" />
+    <Content Include="images\sideicons\start-race-2.png" />
+    <Content Include="images\sideicons\statue-2.png" />
+    <Content Include="images\sideicons\stripclub2.png" />
+    <Content Include="images\sideicons\submarine-2.png" />
+    <Content Include="images\sideicons\summercamp.png" />
+    <Content Include="images\sideicons\sumo-2.png" />
+    <Content Include="images\sideicons\surfacelift.png" />
+    <Content Include="images\sideicons\surfing.png" />
+    <Content Include="images\sideicons\surfpaddle.png" />
+    <Content Include="images\sideicons\surveying-2.png" />
+    <Content Include="images\sideicons\swimming.png" />
+    <Content Include="images\sideicons\synagogue-2.png" />
+    <Content Include="images\sideicons\taekwondo-2.png" />
+    <Content Include="images\sideicons\targ.png" />
+    <Content Include="images\sideicons\tebletennis.png" />
+    <Content Include="images\sideicons\telephone.png" />
+    <Content Include="images\sideicons\temple-2.png" />
+    <Content Include="images\sideicons\templehindu.png" />
+    <Content Include="images\sideicons\tennis.png" />
+    <Content Include="images\sideicons\theater.png" />
+    <Content Include="images\sideicons\themepark.png" />
+    <Content Include="images\sideicons\therapy.png" />
+    <Content Include="images\sideicons\theravadapagoda.png" />
+    <Content Include="images\sideicons\theravadatemple.png" />
+    <Content Include="images\sideicons\toilets.png" />
+    <Content Include="images\sideicons\tower.png" />
+    <Content Include="images\sideicons\townhouse.png" />
+    <Content Include="images\sideicons\trash.png" />
+    <Content Include="images\sideicons\treasure-mark.png" />
+    <Content Include="images\sideicons\triskelion.png" />
+    <Content Include="images\sideicons\university.png" />
+    <Content Include="images\sideicons\usfootball.png" />
+    <Content Include="images\sideicons\veterinary.png" />
+    <Content Include="images\sideicons\videogames.png" />
+    <Content Include="images\sideicons\volleyball.png" />
+    <Content Include="images\sideicons\waco.png" />
+    <Content Include="images\sideicons\waiting.png" />
+    <Content Include="images\sideicons\walkingtour.png" />
+    <Content Include="images\sideicons\wandhydrant.png" />
+    <Content Include="images\sideicons\warehouse-2.png" />
+    <Content Include="images\sideicons\watercraft.png" />
+    <Content Include="images\sideicons\waterpark.png" />
+    <Content Include="images\sideicons\waterskiing.png" />
+    <Content Include="images\sideicons\watertower.png" />
+    <Content Include="images\sideicons\weights.png" />
+    <Content Include="images\sideicons\wifi.png" />
+    <Content Include="images\sideicons\windsurfing.png" />
+    <Content Include="images\sideicons\windturbine.png" />
+    <Content Include="images\sideicons\workoffice.png" />
+    <Content Include="images\sideicons\workshop.png" />
+    <Content Include="images\sideicons\world.png" />
+    <Content Include="images\sideicons\worldheritagesite.png" />
+    <Content Include="images\sideicons\wrestling-2.png" />
+    <Content Include="images\sideicons\x-ray.png" />
+    <Content Include="images\sideicons\yoga.png" />
+    <Content Include="images\sideicons\yooner.png" />
+    <Content Include="images\sideicons\you-are-here-2.png" />
+    <Content Include="images\sideicons\zoo.png" />
+    <Content Include="images\siteicons\BSP_APPT_OP.png" />
+    <Content Include="images\siteicons\BSP_APPT_RU.png" />
+    <Content Include="images\siteicons\BSP_TOWN_OP.png" />
+    <Content Include="images\siteicons\BSP_TOWN_RU.png" />
+    <Content Include="images\siteicons\SPD_APPT_PR.png" />
+    <Content Include="images\siteicons\SPD_APPT_UC.png" />
+    <Content Include="images\siteicons\SPD_TOWN_PR.png" />
+    <Content Include="images\siteicons\SPD_TOWN_UC.png" />
+    <Content Include="images\siteicons\NEW_UNKNOWN.png" />
+    <Content Include="images\Sites.png" />
+    <Content Include="images\slider.png" />
+    <Content Include="images\sliderThumb.png" />
+    <Content Include="images\sliderThumbs.png" />
+    <Content Include="images\SPD_HighRes-Print-33.jpg" />
+    <Content Include="images\thumb.png" />
+    <Content Include="images\Town_15px.png" />
+    <Content Include="images\up.png" />
+    <Content Include="images\weather.png" />
+    <Content Include="images\w\cloudy1.png" />
+    <Content Include="images\w\cloudy1_night.png" />
+    <Content Include="images\w\cloudy2.png" />
+    <Content Include="images\w\cloudy2_night.png" />
+    <Content Include="images\w\cloudy3.png" />
+    <Content Include="images\w\cloudy3_night.png" />
+    <Content Include="images\w\cloudy4.png" />
+    <Content Include="images\w\cloudy4_night.png" />
+    <Content Include="images\w\cloudy5.png" />
+    <Content Include="images\w\dunno.png" />
+    <Content Include="images\w\fog.png" />
+    <Content Include="images\w\fog_night.png" />
+    <Content Include="images\w\hail.png" />
+    <Content Include="images\w\light_rain.png" />
+    <Content Include="images\w\mist.png" />
+    <Content Include="images\w\mist_night.png" />
+    <Content Include="images\w\overcast.png" />
+    <Content Include="images\w\shower1.png" />
+    <Content Include="images\w\shower1_night.png" />
+    <Content Include="images\w\shower2.png" />
+    <Content Include="images\w\shower2_night.png" />
+    <Content Include="images\w\shower3.png" />
+    <Content Include="images\w\sleet.png" />
+    <Content Include="images\w\snow1.png" />
+    <Content Include="images\w\snow1_night.png" />
+    <Content Include="images\w\snow2.png" />
+    <Content Include="images\w\snow2_night.png" />
+    <Content Include="images\w\snow3.png" />
+    <Content Include="images\w\snow3_night.png" />
+    <Content Include="images\w\snow4.png" />
+    <Content Include="images\w\snow5.png" />
+    <Content Include="images\w\sunny.png" />
+    <Content Include="images\w\sunny_night.png" />
+    <Content Include="images\w\tstorm1.png" />
+    <Content Include="images\w\tstorm1_night.png" />
+    <Content Include="images\w\tstorm2.png" />
+    <Content Include="images\w\tstorm2_night.png" />
+    <Content Include="images\w\tstorm3.png" />
+    <Content Include="js\bspIcons.js" />
+    <Content Include="js\DemographicsInfo.js" />
+    <Content Include="js\LifestyleInfo.js" />
+    <Content Include="js\main.js" />
+    <Content Include="js\nls\fr\resources.js" />
+    <Content Include="js\nls\resources.js" />
+    <Content Include="js\OAuthHelper.js" />
+    <Content Include="js\ProximityInfo.js" />
+    <Content Include="js\sites.js" />
+    <Content Include="js\template.js" />
+    <Content Include="js\ui.js" />
+    <Content Include="js\WeatherInfo.js" />
+    <Content Include="LandDev\commonConfig.js" />
+    <Content Include="LandDev\configuration_panel.js" />
+    <Content Include="LandDev\css\black.css" />
+    <Content Include="LandDev\css\blue.css" />
+    <Content Include="LandDev\css\blue\popup.png" />
+    <Content Include="LandDev\css\green.css" />
+    <Content Include="LandDev\css\green\popup.png" />
+    <Content Include="LandDev\css\layout.css" />
+    <Content Include="LandDev\documentation\copymapid.png" />
+    <Content Include="LandDev\documentation\EditDescription.png" />
+    <Content Include="LandDev\documentation\findmapid.png" />
+    <Content Include="LandDev\documentation\install1.png" />
+    <Content Include="LandDev\documentation\install3.png" />
+    <Content Include="LandDev\documentation\mapprops.png" />
+    <Content Include="LandDev\images\gps.png" />
+    <Content Include="LandDev\images\home.png" />
+    <Content Include="LandDev\index.html" />
+    <Content Include="LandDev\javascript\app.js" />
+    <Content Include="LandDev\javascript\CreateContent.js" />
+    <Content Include="LandDev\javascript\CreateGeocoder.js" />
+    <Content Include="LandDev\javascript\nls\ar\template.js" />
+    <Content Include="LandDev\javascript\nls\cs\template.js" />
+    <Content Include="LandDev\javascript\nls\da\template.js" />
+    <Content Include="LandDev\javascript\nls\de\template.js" />
+    <Content Include="LandDev\javascript\nls\en\template.js" />
+    <Content Include="LandDev\javascript\nls\es\template.js" />
+    <Content Include="LandDev\javascript\nls\et\template.js" />
+    <Content Include="LandDev\javascript\nls\fi\template.js" />
+    <Content Include="LandDev\javascript\nls\fr\template.js" />
+    <Content Include="LandDev\javascript\nls\he\template.js" />
+    <Content Include="LandDev\javascript\nls\it\template.js" />
+    <Content Include="LandDev\javascript\nls\ja\template.js" />
+    <Content Include="LandDev\javascript\nls\ko\template.js" />
+    <Content Include="LandDev\javascript\nls\lt\template.js" />
+    <Content Include="LandDev\javascript\nls\lv\template.js" />
+    <Content Include="LandDev\javascript\nls\nb\template.js" />
+    <Content Include="LandDev\javascript\nls\nl\template.js" />
+    <Content Include="LandDev\javascript\nls\pl\template.js" />
+    <Content Include="LandDev\javascript\nls\pt-br\template.js" />
+    <Content Include="LandDev\javascript\nls\pt-pt\template.js" />
+    <Content Include="LandDev\javascript\nls\ro\template.js" />
+    <Content Include="LandDev\javascript\nls\ru\template.js" />
+    <Content Include="LandDev\javascript\nls\sv\template.js" />
+    <Content Include="LandDev\javascript\nls\template.js" />
+    <Content Include="LandDev\javascript\nls\th\template.js" />
+    <Content Include="LandDev\javascript\nls\tr\template.js" />
+    <Content Include="LandDev\javascript\nls\zh-cn\template.js" />
+    <Content Include="resources\configurationPanel.js" />
+    <Content Include="ServiceArea.aspx" />
+    <Content Include="services\BSPData.asmx" />
+    <Content Include="SiteMap.html" />
+    <Content Include="SPD.aspx" />
+    <Content Include="styles\BSP.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="360.aspx.designer.vb">
+      <DependentUpon>360.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="360.aspx.vb">
+      <DependentUpon>360.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="360b.aspx.designer.vb">
+      <DependentUpon>360b.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="360b.aspx.vb">
+      <DependentUpon>360b.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BusinessLocator.aspx.designer.vb">
+      <DependentUpon>BusinessLocator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessLocator.aspx.vb">
+      <DependentUpon>BusinessLocator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Calgary.aspx.designer.vb">
+      <DependentUpon>Calgary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calgary.aspx.vb">
+      <DependentUpon>Calgary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DojoTest.aspx.designer.vb">
+      <DependentUpon>DojoTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DojoTest.aspx.vb">
+      <DependentUpon>DojoTest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServiceArea.aspx.designer.vb">
+      <DependentUpon>ServiceArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceArea.aspx.vb">
+      <DependentUpon>ServiceArea.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="services\BSPData.asmx.vb">
+      <DependentUpon>BSPData.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SPD.aspx.designer.vb">
+      <DependentUpon>SPD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SPD.aspx.vb">
+      <DependentUpon>SPD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\helveticaneue.eot" />
+    <Content Include="fonts\helveticaneue.ttf" />
+    <Content Include="fonts\helveticaneue.woff" />
+    <Content Include="fonts\helveticaneueultralight.eot" />
+    <Content Include="fonts\helveticaneueultralight.ttf" />
+    <Content Include="fonts\helveticaneueultralight.woff" />
+    <Content Include="fonts\steelfish-webfont.eot" />
+    <Content Include="fonts\steelfish-webfont.ttf" />
+    <Content Include="fonts\steelfish-webfont.woff" />
+    <Content Include="LandDev\README.md" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\Local.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="model\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64575</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64575/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
