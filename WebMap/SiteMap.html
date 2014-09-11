@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <title>List of Sites</title>
     <script type="text/javascript" src="//js.arcgis.com/3.10/"></script>
     <link rel="stylesheet" href="//js.arcgis.com/3.10/js/dojo/dijit/themes/claro/claro.css">
     <link rel="stylesheet" href="//js.arcgis.com/3.10/js/esri/css/esri.css">
@@ -12,6 +12,9 @@
             width: 100%;
             margin: 0;
             padding: 0;
+            font-family:Open Sans;
+            font-size:14px;
+
         }
         #pageTitle{
             z-index: 999;
@@ -64,11 +67,28 @@
             background-color:white;
             border:1px solid black;
         }
+
+        #searchSite {
+            background-color: #00add8;
+            color: white;
+            font-family: Open Sans;
+            left: 20px;
+            padding: 10px;
+            position: fixed;
+            top: 100px;
+            width: 300px;
+            z-index:99;
+        }
+        #SiteField{
+            width:280px;
+        }
     </style>
 
 </head>
-<body>
-    
+<body class="claro">
+    <div id="searchSite" class="rounded shadow">
+        <input id="SiteField"/>
+    </div>
     <div id="mapDiv"></div>
     <div id="pageTitle" class="rounded shadow"><img src="/images/Sites.png" /> Site Map</div>
     <div id="mapLegend" class="rounded shadow">
@@ -78,11 +98,14 @@
             <tr><td style="background-color:#54df00">&nbsp;</td><td>Operating</td></tr>
             <tr><td style="background-color:#d4df00">&nbsp;</td><td>Rent-up</td></tr>
             <tr><td style="background-color:#d40000">&nbsp;</td><td>In Construction</td></tr>
-            <tr><td style="background-color:black">&nbsp;</td><td>Upcoming</td></tr>
+            <tr><td style="background-color:#0000d0">&nbsp;</td><td>Upcoming</td></tr>
             <tr><td style="background-color:black">&nbsp;</td><td>Unknown</td></tr>
         </table>
     </div>
     <script type="text/javascript">
+        function goSite(a) {
+            alert(a);
+        }
         require([
             "dojo/_base/array",
             "esri/map",
@@ -94,6 +117,11 @@
             "esri/symbols/PictureMarkerSymbol",
             "esri/renderers/SimpleRenderer",
             "esri/renderers/UniqueValueRenderer",
+            "esri/geometry/Point",
+            "esri/tasks/query",
+            "dojo/data/ItemFileReadStore",
+
+            "dijit/form/ComboBox",
             "dojo/domReady!"
         ],
         function (
@@ -106,17 +134,28 @@
             SimpleMarkerSymbol,
             PictureMarkerSymbol,
             SimpleRenderer,
-            UniqueValueRenderer
+            UniqueValueRenderer,
+            Point,
+            Query,
+            ItemFileReadStore,
+            ComboBox
     ) {
+           
+
+
             urlUtils.addProxyRule({
                 urlPrefix: "http://services.arcgis.com",
-                proxyUrl: "https://spd-rpt-dev/proxy/proxy.ashx/proxy/proxy.ashx"
+                proxyUrl: "/proxy/proxy.ashx"
             });
             urlUtils.addProxyRule({
                 urlPrefix: "www.arcgis.com",
-                proxyUrl: "https://spd-rpt-dev/proxy/proxy.ashx"
+                proxyUrl: "/proxy/proxy.ashx"
             });
+
+
             arcgisUtils.createMap("64542fc7ec1b4d6aad4409c76f0ff79a", "mapDiv").then(function (response) {
+                siteMap = response.map;
+
                 console.log(response.itemInfo.itemData.operationalLayers);
                 var layers = response.itemInfo.itemData.operationalLayers;
 
@@ -125,9 +164,48 @@
                     if (!lyr.featureCollection) {
                         if (lyr.title = "BaseSites") {
 
-                            console.log('not dumb');
-                            //lyr.layerObject.setVisibility(false);
-                            console.log(lyr.visibility);
+                            var q = new Query();
+                            q.where = '1=1';
+
+                            lyr.layerObject.queryFeatures(q, function (results) {
+                                console.log(results);
+                                var store = new ItemFileReadStore({
+                                    data: {
+                                        identifier: "name",
+                                        items: []
+                                    }
+                                });
+                                array.forEach(results.features, function (site) {
+                                    store._jsonData.items.push({
+                                        name: site.attributes.SiteName,
+                                        location: site.attributes.Lat.toString() + ',' + site.attributes.Long.toString()
+
+                                    });
+                                });
+                                store._jsonData.items.sort(compareNames);
+                                var comboBox = new ComboBox({
+                                    id: "siteSelect",
+                                    name: "state",
+                                    placeHolder: "Choose or Type a Site Name",
+                                    store: store,
+                                    searchAttr: "name",
+                                    style: { width: "280px" }
+                                }, "SiteField");
+
+
+                                comboBox.on("Change", function (value) {
+                                    var s = siteMap;
+                                    var loc = store.getValue(comboBox.item, "location");
+                                    var name = store.getValue(comboBox.item, "name");
+                                    var coords = loc.split(',');
+                                    var pt = new Point(coords[1], coords[0]);
+                                    siteMap.centerAndZoom(pt,14);
+                                    console.log('value', loc + " - " + name);
+                                });
+
+                            });
+
+
 
                             var symAOP = new PictureMarkerSymbol("/images/siteicons/BSP_APPT_OP.png", 54, 35);
                             var symARU = new PictureMarkerSymbol("/images/siteicons/BSP_APPT_RU.png", 54, 35);
@@ -138,6 +216,11 @@
                             var symTRU = new PictureMarkerSymbol("/images/siteicons/BSP_TOWN_RU.png", 54, 35);
                             var symTUC = new PictureMarkerSymbol("/images/siteicons/SPD_TOWN_UC.png", 54, 35);
                             var symTPR = new PictureMarkerSymbol("/images/siteicons/SPD_TOWN_PR.png", 54, 35);
+
+                            var symUOP = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_OP.png", 54, 35);
+                            var symURU = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_RU.png", 54, 35);
+                            var symUUC = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_UC.png", 54, 35);
+                            var symUPR = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_PR.png", 54, 35);
 
                             var symUK = new PictureMarkerSymbol("/images/siteicons/NEW_UNKNOWN.png", 54, 35);
 
@@ -152,7 +235,10 @@
                             siteRend.addValue("Townhouse:In Construction", symTUC);
                             siteRend.addValue("Townhouse:Upcoming", symTPR);
 
-
+                            siteRend.addValue("Unknown:Operating", symUOP);
+                            siteRend.addValue("Unknown:Rent-up", symURU);
+                            siteRend.addValue("Unknown:In Construction", symUUC);
+                            siteRend.addValue("Unknown:Upcoming", symUPR);
 
                             lyr.layerObject.setRenderer(siteRend);
                         }
@@ -162,7 +248,13 @@
 
             });
         });
-
+        function compareNames (a, b) {
+            if (a.name < b.name)
+                return -1;
+            if (a.name > b.name)
+                return 1;
+            return 0;
+        }
 
     </script>
 

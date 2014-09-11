@@ -978,6 +978,11 @@
     <Content Include="images\siteicons\SPD_TOWN_PR.png" />
     <Content Include="images\siteicons\SPD_TOWN_UC.png" />
     <Content Include="images\siteicons\NEW_UNKNOWN.png" />
+    <Content Include="images\siteicons\SPD_UKN_UC.png" />
+    <Content Include="images\siteicons\SPD_UKN_OP.png" />
+    <Content Include="images\siteicons\SPD_UKN_PR.png" />
+    <Content Include="images\siteicons\SPD_UKN_RU.png" />
+    <Content Include="images\siteicons\UNKOWN.png" />
     <Content Include="images\Sites.png" />
     <Content Include="images\slider.png" />
     <Content Include="images\sliderThumb.png" />

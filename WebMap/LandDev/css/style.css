@@ -12,7 +12,9 @@
     width: 100% !important;
 }
 /* Style for Loading Indicator*/
-
+body{
+    font-family:Open Sans;
+}
 .app-loading .loading-indicator {
     display: block;
 }

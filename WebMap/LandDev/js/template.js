@@ -217,6 +217,18 @@ define([
             arcgisUtils.arcgisUrl = this.config.sharinghost + "/sharing/rest/content/items";
             // Define the proxy url for the app
             if (this.config.proxyurl) {
+                urlUtils.addProxyRule({
+                    urlPrefix: "www.arcgis.com",
+                    proxyUrl: "/proxy/proxy.ashx"
+                });
+                urlUtils.addProxyRule({
+                    urlPrefix: "http://geoenrich.arcgis.com/",
+                    proxyUrl: "/proxy/proxy.ashx"
+                });
+                urlUtils.addProxyRule({
+                    urlPrefix: "http://services.arcgis.com",
+                    proxyUrl: "/proxy/proxy.ashx"
+                });
                 esriConfig.defaults.io.proxyUrl = this.config.proxyurl;
                 esriConfig.defaults.io.alwaysUseProxy = false;
             }
