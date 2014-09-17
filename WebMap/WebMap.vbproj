@@ -973,6 +973,8 @@
     <Content Include="images\siteicons\BSP_APPT_RU.png" />
     <Content Include="images\siteicons\BSP_TOWN_OP.png" />
     <Content Include="images\siteicons\BSP_TOWN_RU.png" />
+    <Content Include="images\siteicons\REG_OP.png" />
+    <Content Include="images\siteicons\REG_UC.png" />
     <Content Include="images\siteicons\SPD_APPT_PR.png" />
     <Content Include="images\siteicons\SPD_APPT_UC.png" />
     <Content Include="images\siteicons\SPD_TOWN_PR.png" />
@@ -1211,6 +1213,7 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\PublishProfiles\Local.pubxml" />
+    <None Include="My Project\PublishProfiles\Production.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
