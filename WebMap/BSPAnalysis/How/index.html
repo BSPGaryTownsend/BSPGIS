@@ -23,6 +23,9 @@
 		<![endif]-->
 	</head>
 	<body class="calcite app-loading no-touch tundra">
+        <form>
+            <input type="hidden" id="currentTab" />
+        </form>
 		<!-- Loading Indicator -->
 		<div class="loading-indicator">
 			<div class="loading-message" id="loading_message"></div>
@@ -84,6 +87,7 @@
                myApp.reportError(error);
             });
          });
+
 		</script>
 	</body>
 </html>

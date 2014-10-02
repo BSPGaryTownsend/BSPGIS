@@ -1,0 +1,940 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a, a:hover, a:visited{
+	color: #bbbbbb;
+	text-decoration: none;
+}
+#SiteType {
+    width: 150px;
+    color:black;
+}
+#mapControls {
+    color: white;
+    font-family: Open Sans;
+    height: 170px;
+    left: 20px;
+    padding: 5px;
+    position: fixed;
+    top: 60px;
+    width: 350px;
+
+}
+
+.catHeader{
+    font-size:12px;
+    background-color:#4d4d4f;
+    color:white;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+    margin:3px;
+}
+#mapLegend {
+    color: black;
+    font-family: Open Sans;
+    height: 150px;
+    left: 20px;
+    padding: 5px;
+    position: fixed;
+    bottom: 30px;
+    width: 100px;
+        font-size:10px;
+    background-color:white;
+    border:1px solid black;
+}
+.bspHeader {
+    border-bottom: 1px solid;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.bspPopupHeader{
+    font-family:Open Sans;
+    font-size:14pt;
+    font-weight:bold;
+}
+
+.popGrid {
+    width: 100%;
+    border-collapse: collapse;
+}
+.popGrid td {
+    text-align: right;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-color:gray;
+    border-left:1px solid;
+    border-right:1px solid;
+}
+.popGrid .ownRow, .popGrid .popRow {
+    background-color: maroon;
+    color: white;
+}
+
+.popGrid .rentRow {
+    background-color: forestgreen;
+    color: white;
+}
+.popGrid .rowHead{
+    text-align:left;
+    font-weight:bold;
+}
+
+#mapControls .esriGeocoderResults {
+    background: #4d4d4f;
+    border-radius: 5px;
+    color:white;
+    z-index:200;
+    width:350px;
+}
+
+.simpleGeocoder .esriGeocoderResult:hover, .simpleGeocoder .esriGeocoderResultEven:focus, .simpleGeocoder .esriGeocoderResultOdd:focus
+{
+    color:black;
+}
+/* Fonts */
+
+
+
+#mapDiv {
+	position: fixed;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.esriRTL label {
+	/*Example of a rule that will be applied if the app is viewed in a browser with a RTL locale like Hebrew or Arabic.*/
+}
+
+.loading-indicator {
+	/* Loading status */
+	display: none;
+	height: 100%;
+	width: 100%;
+	z-index: 500;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background: #fff;
+}
+
+.app-loading .loading-indicator, .app-error .loading-indicator {
+	/* Show this class when loading or error */
+	display: block;
+}
+
+.app-loading .loading-indicator {
+	/* Loading image */
+	background-position: center center;
+	background-image: url(../images/Loadinglogo.gif);
+	background-repeat: no-repeat;
+}
+
+.app-error .loading-message {
+	/* Error status */
+	background-position: top center;
+	background-image: url(../images/error.png);
+	background-repeat: no-repeat;
+	padding-top: 60px;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	top: 40%;
+	left: 0;
+	text-align: center;
+}
+
+/* Esri Jvascript API*/
+
+.esriSimpleSlider {
+	text-align: center;
+	color: #ffffff;
+	background-color: rgb(255,255,255);
+	-moz-opacity: 0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	cursor: pointer;
+	-moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000')";
+}
+
+.esriSimpleSlider div {
+	width: 19px;
+	height: 19px;
+	font-size: 16px;
+	font-family: verdana, helvetica;
+	font-weight: bold;
+	line-height: 19px;
+	-webkit-user-select: none;
+}
+
+.esriSimpleSliderTL {
+	top: 5px;
+	left: 10px;
+	border: none;
+}
+
+.esriSimpleSliderDecrementButton:hover, .esriSimpleSliderIncrementButton:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.esriSimpleSliderIncrementButton {
+	border-bottom: solid 1px #ffffff !important;
+}
+
+.arcgisGeocoder .esriGeocoderLoading .esriGeocoderReset {
+    background: url("../images/loading.gif") no-repeat scroll center center transparent;
+}
+
+.simpleGeocoder .esriGeocoderLoading .esriGeocoderReset {
+	background: url("../images/loading.gif") no-repeat scroll center center transparent;
+}
+
+.simpleGeocoder .esriGeocoder {
+	display: block;
+	width: 350px;
+	margin: 0;
+	/*border: 1px solid #57585A;*/
+	border: transparent;
+	background-color: rgba(77,77,79,1);
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.simpleGeocoder .esriGeocoder input {
+	color: #bbbbbb;
+}
+
+.simpleGeocoder .esriGeocoder input:focus {
+	color: #bbbbbb;
+}
+
+.esriControlsBR {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.logo-med {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.logo-sm {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+.esriAttribution {
+	position: absolute;
+	left: 65px;
+	bottom: 5px;
+}
+
+.HomeButton .home {
+	top: 0px;
+	padding: 0px;
+	width: 26px;
+	height: 26px;
+	background-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-o-border-radius: 13px;
+	border-radius: 13px;
+	background-size: 14px 14px;
+}
+
+.LocateButton .zoomLocateButton {
+	padding: 0px;
+	width: 26px;
+	height: 26px;
+	background-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	-o-border-radius: 13px;
+	border-radius: 13px;
+	background-size: 14px 14px;
+}
+
+.sizer .titlePane{
+	height: 40px;
+}
+
+.esriPopup .titlePane {
+	border: none !important;
+}
+
+.esriPopup .contentPane {
+	background-color: #FFFFFF;
+}
+
+.esriPopup .actionsPane {
+	background-color: #FFFFFF;
+}
+
+.esriPopup {
+	font-family:Open Sans !important;
+
+}
+
+.esriPopup .pointer{
+	display: none !important;
+}
+
+.esriPopup .outerPointer {
+	display: none !important;
+}
+
+.esriPopup .titleButton.maximize {
+	display: none !important;
+}
+
+.dijitSliderBumper {
+	display: none;
+}
+
+.dijitSliderImageHandleH {
+	border: 0;
+	width: 18px;
+	height: 16px;
+	background-image: url("../images/sliderThumbs.png") !important;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.dijitSliderBar .dijitSliderRemainingBar, .dijitSlider .dijitSliderRemainingBarH, .dijitSlider .dijitSliderRightBumper,  .dijitSliderFocused .dijitSliderRemainingBarH,  .dijitSliderFocused .dijitSliderRightBumper {
+	background-color: rgba(0,0,0,0.2) !important;
+	border: 0px solid transparent !important;
+	height: 2px !important;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.dijitSlider .dijitSliderProgressBarH, .claro .dijitSlider .dijitSliderLeftBumper
+.dijitSliderFocused .dijitSliderProgressBarH, .claro .dijitSliderFocused .dijitSliderLeftBumper {
+	background-color: #ffffff;
+	border: 0px solid #ffffff;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	height: 2px;
+}
+
+.esriStopsContainer {
+	display: none;
+}
+
+.esriResultsButtonsContainer {
+	display: none;
+}
+
+/* Template */
+
+.bg {
+	display: block;
+	background-color: rgb(255,255,255);
+	-moz-opacity: 0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+
+.rounded {
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.roundedTop {
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.shadow {
+	-moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000')";
+	/*filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000');*/
+}
+
+#panelDirections {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 0px;
+	height: 100%;
+	display: none;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#panelContent {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 0px;
+	height: 100%;
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#panelPages {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+.pageblank {
+	width: 0px;
+	height: 100%;
+}
+
+.pageMenu {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin-left: -50px;
+	top: 5px;
+	text-align: center;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.page {
+	position: relative;
+	width: 220px;
+	margin-left: -220px;
+	height: 100%;
+	display: block;
+	background-color: rgba(0,0,0,0.15);
+}
+
+.pageContent {
+	position:absolute;
+	left: 10px;
+	right: 10px;
+	top: 5px;
+	bottom: 5px;
+	overflow: hidden;
+	display: block;
+	background-color: rgba(255,255,255,1);
+	background-color: #ffffff;
+}
+
+.pageHeader {
+	position: relative;
+	width: 100%;
+	height: 240px;
+	text-align: center;
+	display: block;
+}
+
+.pageTitle {
+	position: relative;
+	left: 0px;
+	top: 5px;
+	width : 100%;
+	height: 20px;
+	font-size: 11px;
+	color: #ffffff;
+	line-height: 20px;
+	text-align: center;
+	overflow: hidden;
+	white-space:nowrap;
+}
+.pageTypeHeader{
+    text-align:center;
+    font-family:Open Sans;
+    font-size:20px;
+    
+}
+.pageCounter {
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	top: 35px;
+	width: 140px;
+	font-size: 90px;
+	height: 140px;
+	line-height: 140px;
+	font-family: Open Sans;
+	border: 10px solid rgba(0,0,0,1);
+	-moz-border-radius: 80px;
+	-webkit-border-radius: 80px;
+	border-radius: 80px;
+	opacity:0.3;
+	filter:alpha(opacity=30);
+}
+
+.pageIcon {
+	position: absolute;
+	left: 25px;
+	top: 25px;
+	width: 90px;
+	height: 90px;
+}
+
+.pageReverseDir {
+	position: absolute;
+	left: 50%;
+	bottom: 5px;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	cursor: pointer;
+	background: url(../images/reverse.png) no-repeat;
+}
+
+.pageUnits {
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 25px;
+	width: 180px;
+	height: 10px;
+	font-size: 8px;
+	color: #000000;
+	text-align: center;
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+	filter: alpha(opacity=50); 
+}
+
+.pageSlider {
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 5px;
+	width: 180px;
+	height: 20px;
+	z-index: 200;
+	display: block;
+	background: url(../images/slider.png) no-repeat;
+	background-position:bottom;
+}
+
+.pageClose {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: url(../images/close.png) no-repeat;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.pageUp {
+	position: absolute;
+	top: 27px;
+	right: 5px;
+	background: url(../images/up.png) no-repeat;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.pageDown {
+	position: absolute;
+	top: 49px;
+	right: 5px;
+	background: url(../images/down.png) no-repeat;
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	display: block;
+}
+
+.pageBody {
+	position: absolute;
+	top: 240px;
+	bottom: 0px;
+	width: 100%;
+	display: block;
+	color: #000000;
+	font-size: 10px;
+	text-align: center;
+	padding: 0px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.pageClear {
+	position: absolute;
+	bottom: -10px;
+	height: 10px;
+	width: 100%;
+	display:block;
+	background-color: rgba(0,0,0,0.15);
+}
+
+.resultsContent {
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.recDemographics {
+	width: 100%;
+	height: 65px;
+	display: block;
+	border-bottom: 1px solid #dcdcdc;
+	text-align: center;
+	font-size: 11px;
+	line-height: 20px;
+	color: #6e6e6e;
+}
+
+.recLifestyle {
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 11px;
+	line-height: 14px;
+	color: #6e6e6e;
+}
+
+.recWeather {
+	width: 100%;
+	height: 65px;
+	display: block;
+	border-bottom: 1px solid #dcdcdc;
+	text-align: center;
+	font-size: 11px;
+	line-height: 20px;
+	color: #6e6e6e;
+}
+
+.recLeft {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.recRight {
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.imgWeather {
+	height: 80%;
+	margin: 10%;
+}
+
+.recProximity {
+	position: relative;
+	width: 100%;
+	height: 65px;
+	display: block;
+	border-bottom: 1px solid #dcdcdc;
+	text-align: center;
+	font-size: 11px;
+	line-height: 20px;
+	color: #6e6e6e;
+}
+
+.recLeftNum {
+	position: absolute;
+	width: 40px;
+	height: 100%;
+	display: block;
+	background-color: #fff;
+}
+.iconrecNum{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 32px;
+    height: 37px;
+    line-height: 37px;
+    color: #ffffff;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.recNum {
+	margin-left: 5px;
+	margin-top: 18px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	color: #ffffff;
+	-moz-border-radius: 14px;
+	-webkit-border-radius: 14px;
+	border-radius: 14px;
+	cursor: pointer;
+}
+.diamond {
+	width: 0;
+	height: 0;
+	border: 24px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -12px;
+}
+.diamond:after {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: 12px;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	border-top-color: red;
+}
+
+.recInfo {
+	position: absolute;
+	text-align: left;
+	left: 40px;
+	right: 0px;
+	top: 3px;
+	height: 62px;
+	display: block;
+	font-size: 10px;
+	line-height: 11px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.recDistance {
+	color: #bbbbbb;
+	cursor: pointer;
+}
+
+.num {
+	font-size: 20px;
+	font-family: Open Sans;
+	line-height: 40px;
+}
+
+#panelTop {
+	position: fixed;
+	left: 35px;
+	top: 5px;
+	color: #ffffff;
+	font-family: Open Sans;
+	font-size: 20px;
+	font-weight: normal;
+	padding: 5px;
+	display: block;
+	overflow: visible;
+	height: auto;
+}
+
+#panelTitle {
+	max-width: 500px;
+	height: 30px;
+	float: left;
+	color: #ffffff;
+	padding: 0;
+	display: block;
+}
+
+#panelLogo {
+	width: auto;
+	height: 30px;
+	overflow: hidden;
+	float: left;
+	line-height: 30px;
+}
+
+#panelText {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 5px 0 5px;
+}
+
+#panelSearch {
+	float: left;
+	margin: 0;
+	width: 100%;
+	height: 30px;
+	color: #6e6e6e;
+	/*overflow: hidden;*/
+}
+
+
+
+/* MEDIA SPECIFIC: SMALL TABLETS */
+
+@media only screen and (max-width: 700px) {
+	
+	.SimpleSlider {
+		display: none;
+	}
+	
+	#panelTop {
+		left: 10px;
+	}
+	
+	#panelText {
+		display: none;
+	}
+	 
+}
+
+/* MEDIA SPECIFIC: SMALL TABLETS */
+
+@media only screen and (max-width: 500px) {
+	
+	.esriSimpleSlider {
+		display: none;
+	}
+	
+	#panelTop {
+		left: 10px;
+	}
+	
+	/*#panelLogo {
+		display: none;
+	}*/
+	
+	#panelText {
+		display: none;
+	}
+	 
+}
+
+
+/* MEDIA SPECIFIC: PHONES */
+
+@media only screen and (max-width: 470px) {
+	
+	.esriSimpleSlider {
+		display: none;
+	}
+	
+	#panelTop {
+		left: 10px;
+	}
+	
+	#panelLogo {
+		display: none;
+	}
+	
+	#panelText {
+		display: none;
+	}
+	
+	#panelContent {
+		position: absolute;
+		right: -100%;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		display: block;
+		background-color: rgba(0,0,0,0.5);
+	}
+	
+	.page {
+		position: relative;
+		width: 100%;
+		margin-left: -100%;
+		height: 100%;
+		display: block;
+		background-color: rgba(0,0,0,0.15);
+	}
+
+	.pageContent {
+		top: 60px;
+	}
+	
+	.pageHeader {
+		position: relative;
+		width: 100%;
+		height: 110px;
+		text-align: center;
+		display: block;
+	}
+	
+	.pageTitle {
+		position: absolute;
+		left: 80px;
+		right: 30px;
+		width: auto;
+		top: 30px;
+		height: 20px;
+		font-size: 11px;
+		color: #ffffff;
+		line-height: 20px;
+		overflow: hidden;
+		text-align: left;
+	}
+		
+	.pageCounter {
+		position: absolute;
+		left: 5px;
+		margin-left: 0px;
+		top: 5px;
+		width: 60px;
+		font-size: 40px;
+		height: 60px;
+		line-height: 60px;
+		font-family: Open Sans;
+		border: 5px solid rgba(0,0,0,1);
+		-moz-border-radius: 35px;
+		-webkit-border-radius: 35px;
+		border-radius: 35px;
+		opacity:0.3;
+		filter:alpha(opacity=30);
+	}
+	
+	.pageIcon {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 40px;
+		height: 40px;
+	}
+	
+	.pageBody {
+		position: absolute;
+		top: 110px;
+		bottom: 0px;
+		width: 100%;
+		display: block;
+		color: #000000;
+		font-size: 10px;
+		text-align: center;
+		padding: 0px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	
+}
+	
+
+

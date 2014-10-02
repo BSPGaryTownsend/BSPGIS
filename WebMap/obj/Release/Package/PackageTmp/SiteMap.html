@@ -1,0 +1,284 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Broadstreet and Seymour Sites Map</title>
+    <script type="text/javascript" src="//js.arcgis.com/3.10/"></script>
+    <link rel="stylesheet" href="//js.arcgis.com/3.10/js/dojo/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="//js.arcgis.com/3.10/js/esri/css/esri.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        html, body, #mapDiv {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            font-family:Open Sans;
+            font-size:14px;
+
+        }
+        #pageTitle{
+            z-index: 999;
+            left: 60px;
+            top: 20px;
+            width: 300px;
+            background-color: #00add8;
+            position: fixed;
+            font-family: Open sans;
+            font-size: 35px;
+            color:white;
+            padding: 5px;
+        }
+        #pageTitle img{
+            vertical-align:middle;
+        }
+        .rounded {
+	        -moz-border-radius: 7px 7px 7px 7px;
+	        -webkit-border-radius: 7px 7px 7px 7px;
+	        border-radius: 7px 7px 7px 7px;
+        }
+
+        .roundedTop {
+	        -moz-border-radius: 5px 5px 0 0;
+	        -webkit-border-radius: 5px 5px 0 0;
+	        border-radius: 5px 5px 0 0;
+        }
+
+        .shadow {
+	        -moz-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	        -webkit-box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	        box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+	        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000')";
+	        /*filter: progid:DXImageTransform.Microsoft.Shadow(Strength=10, Direction=135, Color='#000000');*/
+        }
+        .esriSimpleSliderIncrementButton, .esriSimpleSliderDecrementButton{
+            background-color:#00add8 !important; 
+            color:white;
+        }
+        #mapLegend {
+            color: black;
+            font-family: Open Sans;
+            height: 150px;
+            left: 20px;
+            padding: 5px;
+            position: fixed;
+            bottom: 30px;
+            width: 100px;
+                font-size:10px;
+            background-color:white;
+            border:1px solid black;
+        }
+
+        #searchSite {
+            background-color: #00add8;
+            color: white;
+            font-family: Open Sans;
+            left: 20px;
+            padding: 10px;
+            position: fixed;
+            top: 100px;
+            width: 300px;
+            z-index:99;
+        }
+        #SiteField{
+            width:280px;
+        }
+        .esriViewPopup .gallery .frame.image {
+            width: 250px   !important;
+            margin-top:0px !important;
+        }
+        .esriViewPopup img{
+            border: 3px solid #00add8 !important;
+        }
+    </style>
+
+</head>
+<body class="claro">
+    <div id="searchSite" class="rounded shadow">
+        <input id="SiteField"/>
+    </div>
+    <div id="mapDiv"></div>
+    <div id="pageTitle" class="rounded shadow"><img src="/images/Sites.png" /> Site Map</div>
+    <div id="mapLegend" class="rounded shadow">
+        <table>
+            <tr><td><img src="/images/Appt_15px.png" /></td><td>Apartment</td></tr>
+            <tr><td><img src="/images/Town_15px.png" /></td><td>Townhomes</td></tr>
+            <tr><td style="background-color:#54df00">&nbsp;</td><td>Operating</td></tr>
+            <tr><td style="background-color:#d4df00">&nbsp;</td><td>Rent-up</td></tr>
+            <tr><td style="background-color:#d40000">&nbsp;</td><td>In Construction</td></tr>
+            <tr><td style="background-color:#0000d0">&nbsp;</td><td>Upcoming</td></tr>
+            <tr><td style="background-color:black">&nbsp;</td><td>Unknown</td></tr>
+        </table>
+    </div>
+    <script type="text/javascript">
+        function goSite(a) {
+            alert(a);
+        }
+        require([
+            "dojo/_base/array",
+            "esri/map",
+            "esri/arcgis/utils",
+            "esri/config",
+            "esri/urlUtils",
+            "esri/layers/FeatureLayer",
+            "esri/symbols/SimpleMarkerSymbol",
+            "esri/symbols/PictureMarkerSymbol",
+            "esri/renderers/SimpleRenderer",
+            "esri/renderers/UniqueValueRenderer",
+            "esri/geometry/Point",
+            "esri/tasks/query",
+            "dojo/data/ItemFileReadStore",
+
+            "dijit/form/ComboBox",
+            "dojo/domReady!"
+        ],
+        function (
+            array,
+            map,
+            arcgisUtils,
+            esriconfig,
+            urlUtils,
+            FeatureLayer,
+            SimpleMarkerSymbol,
+            PictureMarkerSymbol,
+            SimpleRenderer,
+            UniqueValueRenderer,
+            Point,
+            Query,
+            ItemFileReadStore,
+            ComboBox
+    ) {
+           
+
+
+            urlUtils.addProxyRule({
+                urlPrefix: "http://services.arcgis.com",
+                proxyUrl: "/proxy/proxy.ashx"
+            });
+            urlUtils.addProxyRule({
+                urlPrefix: "www.arcgis.com",
+                proxyUrl: "/proxy/proxy.ashx"
+            });
+
+
+            arcgisUtils.createMap("64542fc7ec1b4d6aad4409c76f0ff79a", "mapDiv").then(function (response) {
+                siteMap = response.map;
+                siteMap.infoWindow.resize(300, 370);
+                console.log(response.itemInfo.itemData.operationalLayers);
+                var layers = response.itemInfo.itemData.operationalLayers;
+
+                array.forEach(layers, function (lyr) {
+                    console.log(lyr.featureCollection);
+                    if (!lyr.featureCollection) {
+                        if (lyr.title = "BaseSites") {
+
+                            var q = new Query();
+                            q.where = '1=1';
+
+                            lyr.layerObject.queryFeatures(q, function (results) {
+                                console.log(results);
+                                var store = new ItemFileReadStore({
+                                    data: {
+                                        identifier: "name",
+                                        items: []
+                                    }
+                                });
+                                array.forEach(results.features, function (site) {
+                                    store._jsonData.items.push({
+                                        name: site.attributes.SiteName,
+                                        location: site.attributes.Lat.toString() + ',' + site.attributes.Long.toString()
+
+                                    });
+                                });
+                                store._jsonData.items.sort(compareNames);
+                                var comboBox = new ComboBox({
+                                    id: "siteSelect",
+                                    name: "state",
+                                    placeHolder: "Choose or Type a Site Name",
+                                    store: store,
+                                    searchAttr: "name",
+                                    style: { width: "280px" }
+                                }, "SiteField");
+
+
+                                comboBox.on("Change", function (value) {
+                                    var s = siteMap;
+                                    var loc = store.getValue(comboBox.item, "location");
+                                    var name = store.getValue(comboBox.item, "name");
+                                    var coords = loc.split(',');
+                                    var long = coords[1];
+                                    var lat = coords[0];
+                                    var pt1 = new Point(long-0.000001, lat-0.000001);
+                                    siteMap.centerAndZoom(pt1, 14);
+                                    siteMap.resize();
+                                    siteMap.reposition();
+                                    var pt2 = new Point(long, lat);
+                                    siteMap.centerAndZoom(pt2, 14);
+                                    siteMap.resize();
+                                    siteMap.reposition();
+                                    console.log('value', loc + " - " + name);
+                                });
+
+                            });
+
+
+
+                            var symAOP = new PictureMarkerSymbol("/images/siteicons/BSP_APPT_OP.png", 54, 35);
+                            var symARU = new PictureMarkerSymbol("/images/siteicons/BSP_APPT_RU.png", 54, 35);
+                            var symAUC = new PictureMarkerSymbol("/images/siteicons/SPD_APPT_UC.png", 54, 35);
+                            var symAPR = new PictureMarkerSymbol("/images/siteicons/SPD_APPT_PR.png", 54, 35);
+
+                            var symTOP = new PictureMarkerSymbol("/images/siteicons/BSP_TOWN_OP.png", 54, 35);
+                            var symTRU = new PictureMarkerSymbol("/images/siteicons/BSP_TOWN_RU.png", 54, 35);
+                            var symTUC = new PictureMarkerSymbol("/images/siteicons/SPD_TOWN_UC.png", 54, 35);
+                            var symTPR = new PictureMarkerSymbol("/images/siteicons/SPD_TOWN_PR.png", 54, 35);
+
+                            var symUOP = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_OP.png", 54, 35);
+                            var symURU = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_RU.png", 54, 35);
+                            var symUUC = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_UC.png", 54, 35);
+                            var symUPR = new PictureMarkerSymbol("/images/siteicons/SPD_UKN_PR.png", 54, 35);
+
+                            var symRUC = new PictureMarkerSymbol("/images/siteicons/REG_UC.png", 35, 35);
+                            var symROP = new PictureMarkerSymbol("/images/siteicons/REG_OP.png", 35, 35);
+
+                            var symUK = new PictureMarkerSymbol("/images/siteicons/NEW_UNKNOWN.png", 54, 35);
+                            
+                            var siteRend = new UniqueValueRenderer(symUK, "Type", "SiteStatus", null, ":");
+                            siteRend.addValue("Low Rise Apt:Operating", symAOP);
+                            siteRend.addValue("Low Rise Apt:Rent-up", symARU);
+                            siteRend.addValue("Low Rise Apt:In Construction", symAUC);
+                            siteRend.addValue("Low Rise Apt:Upcoming", symAPR);
+                            siteRend.addValue("BSP Apart:Pre-construction", symAPR);
+
+                            siteRend.addValue("Townhouse:Operating", symTOP);
+                            siteRend.addValue("Townhouse:Rent-up", symTRU);
+                            siteRend.addValue("Townhouse:In Construction", symTUC);
+                            siteRend.addValue("Townhouse:Upcoming", symTPR);
+
+                            siteRend.addValue("Unknown:Operating", symUOP);
+                            siteRend.addValue("Unknown:Rent-up", symURU);
+                            siteRend.addValue("Unknown:In Construction", symUUC);
+                            siteRend.addValue("Unknown:Upcoming", symUPR);
+
+                            siteRend.addValue("Regional Office:In Construction", symRUC);
+                            siteRend.addValue("Regional Office:Operating", symROP);
+
+                            lyr.layerObject.setRenderer(siteRend);
+                        }
+                    }
+                        
+                })
+
+            });
+        });
+        function compareNames (a, b) {
+            if (a.name < b.name)
+                return -1;
+            if (a.name > b.name)
+                return 1;
+            return 0;
+        }
+
+    </script>
+
+</body>
+</html>

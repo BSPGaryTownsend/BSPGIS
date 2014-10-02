@@ -1,0 +1,19 @@
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\bin\WebMap.dll.config
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\bin\WebMap.dll
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\bin\WebMap.pdb
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\bin\WebMap.xml
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\obj\Debug\WebMap.Resources.resources
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\obj\Debug\WebMap.vbproj.GenerateResource.Cache
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\obj\Debug\WebMap.dll
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\obj\Debug\WebMap.xml
+C:\Visual Studio Projects - Gary\WebMap-Dev-Gary\WebMap\obj\Debug\WebMap.pdb
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.dll.config
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.dll
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.pdb
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.xml
+C:\Visual Studio Projects\GISServices\WebMap\obj\Debug\WebMap.Resources.resources
+C:\Visual Studio Projects\GISServices\WebMap\obj\Debug\WebMap.vbproj.GenerateResource.Cache
+C:\Visual Studio Projects\GISServices\WebMap\obj\Debug\WebMap.dll
+C:\Visual Studio Projects\GISServices\WebMap\obj\Debug\WebMap.xml
+C:\Visual Studio Projects\GISServices\WebMap\obj\Debug\WebMap.pdb
+C:\Visual Studio Projects\GISServices\WebMap\obj\Debug\WebMap.vbprojResolveAssemblyReference.cache

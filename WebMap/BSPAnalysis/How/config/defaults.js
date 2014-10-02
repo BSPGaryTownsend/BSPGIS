@@ -52,12 +52,12 @@ define({
     "tools": [
         {"name": "legend", "enabled": false}, 
         {"name": "bookmarks", "enabled": true},
-        {"name": "layers", "enabled": true}, 
+        {"name": "layers", "enabled": false}, 
         {"name": "basemap", "enabled": false}, 
-        {"name": "overview", "enabled": true},
-        {"name": "measure", "enabled": true}, 
+        {"name": "overview", "enabled": false},
+        {"name": "measure", "enabled": false}, 
         {"name": "edit", "enabled": false, "toolbar": false}, 
-        {"name": "print", "enabled": true, "legend": true, "layouts":false, "format":"pdf"}, 
+        {"name": "print", "enabled": false, "legend": true, "layouts":false, "format":"pdf"}, 
         { "name": "details", "enabled": true },
         { "name": "infopanel", "enabled": true },
         {"name": "share", "enabled": false}

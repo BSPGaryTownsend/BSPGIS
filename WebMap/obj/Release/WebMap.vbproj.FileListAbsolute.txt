@@ -1,0 +1,9 @@
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.dll.config
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.dll
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.pdb
+C:\Visual Studio Projects\GISServices\WebMap\bin\WebMap.xml
+C:\Visual Studio Projects\GISServices\WebMap\obj\Release\WebMap.Resources.resources
+C:\Visual Studio Projects\GISServices\WebMap\obj\Release\WebMap.vbproj.GenerateResource.Cache
+C:\Visual Studio Projects\GISServices\WebMap\obj\Release\WebMap.dll
+C:\Visual Studio Projects\GISServices\WebMap\obj\Release\WebMap.xml
+C:\Visual Studio Projects\GISServices\WebMap\obj\Release\WebMap.pdb

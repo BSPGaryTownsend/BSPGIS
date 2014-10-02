@@ -1,0 +1,47 @@
+﻿body {
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    font-family:Open Sans;
+    background-image:url("/images/default/digitalhands.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.defaultHeader {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    background-color: white;
+    width: 960px;
+    margin-left: auto;
+    position: relative;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 0px 0px 7px 7px;
+    -moz-border-radius: 0px 0px 7px 7px;
+    -webkit-border-radius:0px 0px 7px 7px;
+    margin-bottom: 20px;
+}
+.mainContent{
+    width:940px;
+    background-color:white;
+    border-radius:7px;
+    margin-left:auto;
+    margin-right:auto;
+    border:1px solid black;
+    padding:10px;
+}
+#linksTable{
+    border-collapse:collapse;
+    width:100%;
+}
+
+#linksTable tr{
+    margin-top:3px;
+}
+
+#linksTable tr:hover{
+    background-color:#ffffcc;
+    cursor:pointer;
+}

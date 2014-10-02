@@ -1,0 +1,3109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>\\SPD-RPT-PROD\wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="2brmrents.html">
+      <publishTime>07/23/2014 15:29:58</publishTime>
+    </File>
+    <File Include="360.aspx">
+      <publishTime>07/03/2014 14:01:23</publishTime>
+    </File>
+    <File Include="360b.aspx">
+      <publishTime>07/09/2014 16:53:04</publishTime>
+    </File>
+    <File Include="360c.html">
+      <publishTime>08/11/2014 20:38:25</publishTime>
+    </File>
+    <File Include="bin/WebMap.dll">
+      <publishTime>09/17/2014 10:50:32</publishTime>
+    </File>
+    <File Include="bin/WebMap.xml">
+      <publishTime>09/17/2014 10:50:32</publishTime>
+    </File>
+    <File Include="BusinessLocator.aspx">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="Calgary.aspx">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="config/defaults.js">
+      <publishTime>08/11/2014 14:03:27</publishTime>
+    </File>
+    <File Include="css/default.css">
+      <publishTime>08/27/2014 10:29:48</publishTime>
+    </File>
+    <File Include="css/layout.css">
+      <publishTime>07/23/2014 15:16:31</publishTime>
+    </File>
+    <File Include="css/main.css">
+      <publishTime>08/12/2014 10:53:07</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>08/27/2014 10:41:02</publishTime>
+    </File>
+    <File Include="DojoTest.aspx">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="EarthQuake.html">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="fonts/helveticaneue.eot">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneue.svg">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneue.ttf">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneue.woff">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneueultralight.eot">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneueultralight.svg">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneueultralight.ttf">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/helveticaneueultralight.woff">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/steelfish-webfont.eot">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/steelfish-webfont.svg">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/steelfish-webfont.ttf">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="fonts/steelfish-webfont.woff">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="GeoEnrichServices.html">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="images/360ResearchTool.png">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="images/360Tool.png">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="images/ajax-loader.gif">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/Appt_15px.png">
+      <publishTime>08/11/2014 20:35:51</publishTime>
+    </File>
+    <File Include="images/BSP_HighRes-Print-33.jpg">
+      <publishTime>07/02/2014 17:26:19</publishTime>
+    </File>
+    <File Include="images/car.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/close.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/default/2Bedroom.png">
+      <publishTime>08/27/2014 10:08:43</publishTime>
+    </File>
+    <File Include="images/default/360_portal.png">
+      <publishTime>08/27/2014 10:08:43</publishTime>
+    </File>
+    <File Include="images/default/Banner_Business-Intelligence_Rolling-Forecast.png">
+      <publishTime>08/27/2014 09:15:16</publishTime>
+    </File>
+    <File Include="images/default/banner_BusinessIntel.jpg">
+      <publishTime>08/27/2014 09:26:16</publishTime>
+    </File>
+    <File Include="images/default/digitalhands.jpg">
+      <publishTime>08/27/2014 09:39:14</publishTime>
+    </File>
+    <File Include="images/default/SiteMap_Portal.png">
+      <publishTime>08/27/2014 10:08:43</publishTime>
+    </File>
+    <File Include="images/demographics.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/directions.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/down.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/error.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/lifestyle.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/lifestyleb.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/loading.gif">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/Loadinglogo.gif">
+      <publishTime>07/18/2014 15:01:02</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/MapHeader.png">
+      <publishTime>08/11/2014 13:58:15</publishTime>
+    </File>
+    <File Include="images/mapicons/aboriginal.png">
+      <publishTime>08/08/2014 15:52:09</publishTime>
+    </File>
+    <File Include="images/mapicons/acupuncture.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/administration.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/administrativeboundary.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/aed-2.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/agritourism.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/aircraftcarrier.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/airshow-2.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/air_fixwing.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/ambulance.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/ambulanceboat.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/amphitheater-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/amphitheater.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/anniversary.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/anthropo.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/apartment-3.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/aquarium.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/arch.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/archery.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/army.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/art-museum-2.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/atm-2.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/atv.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/australianfootball.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/avalanche1.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/badminton-2.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/bank.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/barber.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/baseball.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/basketball.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/battleship-3.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/beachvolleyball.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/beautysalon.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/bigcity.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/bike_downhill.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/bike_rising.png">
+      <publishTime>08/12/2014 15:15:25</publishTime>
+    </File>
+    <File Include="images/mapicons/billiard-2.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/boardercross.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/boatcrane.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/bobsleigh.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/bollie.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/bomber-2.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/bouddha.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/bowling.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/boxing.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/breastfeeding.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/brewery1.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/bridge_modern.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/bridge_old.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/bullfight.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/bunker-2-2.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/bunker.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/bustour.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cabin-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/campfire-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/camping-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/carrental.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/casino-2.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/castle-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cathedral.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/catholicgrave.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cave-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cctv.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/cemetary.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/channelchange.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/chapel-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/chemistry-2.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/chiropractor.png">
+      <publishTime>08/08/2014 15:52:31</publishTime>
+    </File>
+    <File Include="images/mapicons/chronometer.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/church-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cinema.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/circus.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/citysquare.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/citywalls.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/climbing.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/clock.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/coins.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/coldfoodcheckpoint.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/coldstorage.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/comedyclub.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/communitycentre.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/company.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/condominium.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/conference.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/congress.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/construction.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/constructioncrane.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/contract.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/convent-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/country.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/court.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/cramschool.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/crematorium.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cricket.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/cromlech.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cross-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cruiseship.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/cup.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/curling-2.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/currencyexchange.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/customs.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/cycling.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/cycling_feed.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/cycling_sprint.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/dam.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/dance_class.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/dancinghall.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/database.png">
+      <publishTime>08/08/2014 15:52:53</publishTime>
+    </File>
+    <File Include="images/mapicons/daycare.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/deepseafishing.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/dentist.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/dinopark.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/disability.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/discgolf.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/diving.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/dogs_leash.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/dressingroom.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/drinkingfountain.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/drugstore.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/elevator.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/elevator_down.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/elevator_up.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/embassy.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/emergencyphone.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/entrance.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/eu.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/exchequer.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/exit.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/expert.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/factory.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/ferriswheel.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/festival.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/fetalalcoholsyndrom.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/findajob.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/finish.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/fire-hydrant-2.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/fireexstinguisher.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/firemen.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/fireworks.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/firstaid.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/fishing.png">
+      <publishTime>08/12/2014 15:15:27</publishTime>
+    </File>
+    <File Include="images/mapicons/fishingboat.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/fitness.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/flag-export.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/foodcan.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/footprint.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/ford-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/forest.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/foundry-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/fountain-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/fourbyfour.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/freqchg.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/fsb_marker.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/ft.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/gas_cylinder1.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/gavel-auction-fw.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/gendarmery_france.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/geocaching-3.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/geothermal-site.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/ghosttown.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/glasswater.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/glazer.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/golfing.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/gondola-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/group-2.png">
+      <publishTime>08/08/2014 15:53:14</publishTime>
+    </File>
+    <File Include="images/mapicons/handball.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/hanggliding.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/headstone-2.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/heating-and-aircon.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/highschool.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/hiking.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/hiretools.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/historicalquarter.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/historical_museum.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/hoergeraeteakustiker_22px.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/hookah_final.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/horseriding.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/hospital-building.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/hotfoodcheckpoint.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/house.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/hunting.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/hut.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/icehockey.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/iceskating.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/icon-nailsalon.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/icon-sevilla.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/indoor-arena.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/information.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/iobridge.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/jacuzzi.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/japanese-lantern.png">
+      <publishTime>08/08/2014 15:53:36</publishTime>
+    </File>
+    <File Include="images/mapicons/japanese-temple.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/jazzclub.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/jeep.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/jetfighter.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/jewishgrave.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/jewishquarter.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/jogging.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/judo.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/karate.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/karting.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/kayaking.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/kitchen.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/kitesurfing.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/laboratory.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/landfill.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/landmark.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/laterne.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/latrine.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/laundromat.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/library.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/lifeguard-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/lighthouse-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/linedown.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/lock.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/lockerrental.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/lockerroom.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/magicshow.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/map.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/mapicon.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/marijuana.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/marina-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/massage.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/mastcrane1.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/medicalstore.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/medicine.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/megalith.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/memorial.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/metronetwork.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/military.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/mine.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/missile-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/mobilephonetower.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/modernmonument.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/moderntower.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/monument-historique-icon-white-22x22.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/monument.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/mosquee.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/motorbike.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/mountainbiking-3.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/mountains_cathc.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/moving-walkway-enter-export.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/mural.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_archeological.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_art.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_crafts.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_industry.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_naval.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_openair.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_science.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/museum_war.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/music_choral.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/music_classical.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/music_hiphop.png">
+      <publishTime>08/08/2014 15:52:11</publishTime>
+    </File>
+    <File Include="images/mapicons/music_live.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/music_rock.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/nanny.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/ne_barn-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/no-nuke-export.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/nordicski.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/notvisited.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/nursery.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/nursing_home_icon.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/observatory.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/ododow.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/office-building.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/oilpumpjack.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/oilrig2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/olympicsite.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/ophthalmologist.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/orienteering.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/outlet2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/pagoda-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/paintball.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/palace-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/palm-tree-export.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/panoramicview.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/paragliding.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/parasailing.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/party-2.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/petanque.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/petroglyphs-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/picnic-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/pin-export.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/planetarium-2.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/plastering-icon.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/pleasurepier.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/poker.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/police.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/pond.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/postal.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/powerlinepole.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/poweroutage.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/powerplant.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/powersubstation.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/prayer.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/presentation.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/printer-2.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/prison.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/publicart.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/pyramid.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/radar.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/radio-control-model-car.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/radio-station-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/recycle.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/regroup.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/rockhouse.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/rollerblade.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/rollerskate.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/ropescourse.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/rowboat.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/rugbyfield.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/ruins-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/rupee-icon.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/sailing.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/satellite-dish.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/sauna.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/sawmill-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/school.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/scubadiving.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/segway.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/seniorsite.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/septic_tank.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/shintoshrine.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/shipwreck.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/shooting.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/shootingrange.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/shower.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/sight-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/signpost-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/sikh.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/skiing.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/skijump.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/skilifting.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/sleddog.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/sledge.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/sledge_summer.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/smallcity.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/smoking.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/snorkeling.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/snowboarding.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/snowmobiling.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/snowpark_arc.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/snowshoeing.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/soccer.png">
+      <publishTime>08/12/2014 15:15:28</publishTime>
+    </File>
+    <File Include="images/mapicons/solarenergy.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/sozialeeinrichtung.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/spa.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/spaceport-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/speedriding.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/spelunking.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/splice.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/sponge.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/sportscar.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/sportutilityvehicle.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/square-compass.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/squash-2.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/st-margarets-cross-map-icon-22-x-22.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/stadium.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/stairs.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/star-3.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/start-race-2.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/statue-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/stripclub2.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/submarine-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/summercamp.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/sumo-2.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/surfacelift.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/surfing.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/surfpaddle.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/surveying-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/swimming.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/synagogue-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/taekwondo-2.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/targ.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/tebletennis.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/telephone.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/temple-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/templehindu.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/tennis.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/theater.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/themepark.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/therapy.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/theravadapagoda.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/theravadatemple.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/toilets.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/tower.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/townhouse.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/trash.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/treasure-mark.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/triskelion.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/university.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/usfootball.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/veterinary.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/videogames.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/volleyball.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/waco.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/waiting.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/walkingtour.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/wandhydrant.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/warehouse-2.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/watercraft.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/waterpark.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/mapicons/waterskiing.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/watertower.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/weights.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/wifi.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/windsurfing.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/windturbine.png">
+      <publishTime>08/08/2014 15:52:56</publishTime>
+    </File>
+    <File Include="images/mapicons/workoffice.png">
+      <publishTime>08/08/2014 15:53:15</publishTime>
+    </File>
+    <File Include="images/mapicons/workshop.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/world.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/worldheritagesite.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/wrestling-2.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/x-ray.png">
+      <publishTime>08/08/2014 15:52:32</publishTime>
+    </File>
+    <File Include="images/mapicons/yoga.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/yooner.png">
+      <publishTime>08/12/2014 15:15:29</publishTime>
+    </File>
+    <File Include="images/mapicons/you-are-here-2.png">
+      <publishTime>08/08/2014 15:53:37</publishTime>
+    </File>
+    <File Include="images/mapicons/zoo.png">
+      <publishTime>08/08/2014 15:52:12</publishTime>
+    </File>
+    <File Include="images/menu.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/pin.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/reverse.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/rmd_commercial.png">
+      <publishTime>08/08/2014 10:53:35</publishTime>
+    </File>
+    <File Include="images/rmd_private.png">
+      <publishTime>08/08/2014 10:54:08</publishTime>
+    </File>
+    <File Include="images/sideicons/aboriginal.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/acupuncture.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/administration.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/administrativeboundary.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/aed-2.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/agritourism.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/aircraftcarrier.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/airshow-2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/air_fixwing.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/ambulance.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/ambulanceboat.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/amphitheater-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/amphitheater.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/anniversary.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/anthropo.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/apartment-3.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/aquarium.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/arch.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/archery.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/army.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/art-museum-2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/atm-2.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/atv.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/australianfootball.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/avalanche1.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/badminton-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/bank.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/barber.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/baseball.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/basketball.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/battleship-3.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/beachvolleyball.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/beautysalon.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/bigcity.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/bike_downhill.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/bike_rising.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/billiard-2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/boardercross.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/boatcrane.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/bobsleigh.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/bollie.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/bomber-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/bouddha.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/bowling.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/boxing.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/breastfeeding.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/brewery1.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/bridge_modern.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/bridge_old.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/bullfight.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/bunker-2-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/bunker.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/bustour.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/cabin-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/campfire-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/camping-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/carrental.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/casino-2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/castle-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/cathedral.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/catholicgrave.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/cave-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/cctv.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/cemetary.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/channelchange.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/chapel-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/chemistry-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/chiropractor.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/chronometer.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/church-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/cinema.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/circus.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/citysquare.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/citywalls.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/climbing.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/clock.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/coins.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/coldfoodcheckpoint.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/coldstorage.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/comedyclub.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/communitycentre.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/company.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/condominium.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/conference.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/congress.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/construction.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/constructioncrane.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/contract.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/convent-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/country.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/court.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/cramschool.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/crematorium.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/cricket.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/cromlech.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/cross-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/cruiseship.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/cup.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/curling-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/currencyexchange.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/customs.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/cycling.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/cycling_feed.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/cycling_sprint.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/dam.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/dance_class.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/dancinghall.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/database.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/daycare.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/deepseafishing.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/dentist.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/dinopark.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/disability.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/discgolf.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/diving.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/dogs_leash.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/dressingroom.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/drinkingfountain.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/drugstore.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/elevator.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/elevator_down.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/elevator_up.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/embassy.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/emergencyphone.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/entrance.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/eu.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/exchequer.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/exit.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/expert.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/factory.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/ferriswheel.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/festival.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/fetalalcoholsyndrom.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/findajob.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/finish.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/fire-hydrant-2.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/fireexstinguisher.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/firemen.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/fireworks.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/firstaid.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/fishing.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/fishingboat.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/fitness.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/flag-export.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/foodcan.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/footprint.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/ford-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/forest.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/foundry-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/fountain-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/fourbyfour.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/freqchg.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/fsb_marker.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/ft.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/gas_cylinder1.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/gavel-auction-fw.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/gendarmery_france.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/geocaching-3.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/geothermal-site.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/ghosttown.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/glasswater.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/glazer.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/golfing.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/gondola-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/group-2.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/handball.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/hanggliding.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/headstone-2.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/heating-and-aircon.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/highschool.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/hiking.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/hiretools.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/historicalquarter.png">
+      <publishTime>08/12/2014 19:55:58</publishTime>
+    </File>
+    <File Include="images/sideicons/historical_museum.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/hoergeraeteakustiker_22px.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/hookah_final.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/horseriding.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/hospital-building.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/hotfoodcheckpoint.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/house.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/hunting.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/hut.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/icehockey.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/iceskating.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/icon-nailsalon.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/icon-sevilla.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/indoor-arena.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/information.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/iobridge.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/jacuzzi.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/japanese-lantern.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/japanese-temple.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/jazzclub.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/jeep.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/jetfighter.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/jewishgrave.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/jewishquarter.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/jogging.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/judo.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/karate.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/karting.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/kayaking.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/kitchen.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/kitesurfing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/laboratory.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/landfill.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/landmark.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/laterne.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/latrine.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/laundromat.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/library.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/lifeguard-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/lighthouse-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/linedown.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/lock.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/lockerrental.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/lockerroom.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/magicshow.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/map.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/mapicon.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/marijuana.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/marina-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/massage.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/mastcrane1.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/medicalstore.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/medicine.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/megalith.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/memorial.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/metronetwork.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/military.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/mine.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/missile-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/mobilephonetower.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/modernmonument.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/moderntower.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/monument-historique-icon-white-22x22.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/monument.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/mosquee.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/motorbike.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/mountainbiking-3.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/mountains_cathc.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/moving-walkway-enter-export.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/mural.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_archeological.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_art.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_crafts.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_industry.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_naval.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_openair.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_science.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/museum_war.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/music_choral.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/music_classical.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/music_hiphop.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/music_live.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/music_rock.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/nanny.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/ne_barn-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/no-nuke-export.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/nordicski.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/notvisited.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/nursery.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/nursing_home_icon.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/observatory.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/ododow.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/office-building.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/oilpumpjack.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/oilrig2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/olympicsite.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/ophthalmologist.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/orienteering.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/outlet2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/pagoda-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/paintball.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/palace-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/palm-tree-export.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/panoramicview.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/paragliding.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/parasailing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/party-2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/petanque.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/petroglyphs-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/picnic-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/pin-export.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/planetarium-2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/plastering-icon.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/pleasurepier.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/poker.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/police.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/pond.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/postal.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/powerlinepole.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/poweroutage.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/powerplant.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/powersubstation.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/prayer.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/presentation.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/printer-2.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/prison.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/publicart.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/pyramid.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/radar.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/radio-control-model-car.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/radio-station-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/recycle.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/regroup.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/rockhouse.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/rollerblade.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/rollerskate.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/ropescourse.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/rowboat.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/rugbyfield.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/ruins-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/rupee-icon.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/sailing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/satellite-dish.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/sauna.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/sawmill-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/school.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/scubadiving.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/segway.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/seniorsite.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/septic_tank.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/shintoshrine.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/shipwreck.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/shooting.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/shootingrange.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/shower.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/sight-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/signpost-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/sikh.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/skiing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/skijump.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/skilifting.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/sleddog.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/sledge.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/sledge_summer.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/smallcity.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/smoking.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/snorkeling.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/snowboarding.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/snowmobiling.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/snowpark_arc.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/snowshoeing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/soccer.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/solarenergy.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/sozialeeinrichtung.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/spa.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/spaceport-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/speedriding.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/spelunking.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/splice.png">
+      <publishTime>08/12/2014 19:58:40</publishTime>
+    </File>
+    <File Include="images/sideicons/sponge.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/sportscar.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/sportutilityvehicle.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/square-compass.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/squash-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/st-margarets-cross-map-icon-22-x-22.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/stadium.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/stairs.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/star-3.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/start-race-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/statue-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/stripclub2.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/submarine-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/summercamp.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/sumo-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/surfacelift.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/surfing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/surfpaddle.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/surveying-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/swimming.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/synagogue-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/taekwondo-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/targ.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/tebletennis.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/telephone.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/temple-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/templehindu.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/tennis.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/theater.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/themepark.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/therapy.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/theravadapagoda.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/theravadatemple.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/toilets.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/tower.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/townhouse.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/trash.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/treasure-mark.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/triskelion.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/university.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/usfootball.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/veterinary.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/videogames.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/volleyball.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/waco.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/waiting.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/walkingtour.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/wandhydrant.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/warehouse-2.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/watercraft.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/waterpark.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/sideicons/waterskiing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/watertower.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/weights.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/wifi.png">
+      <publishTime>08/12/2014 19:57:50</publishTime>
+    </File>
+    <File Include="images/sideicons/windsurfing.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/windturbine.png">
+      <publishTime>08/12/2014 19:58:42</publishTime>
+    </File>
+    <File Include="images/sideicons/workoffice.png">
+      <publishTime>08/12/2014 19:57:52</publishTime>
+    </File>
+    <File Include="images/sideicons/workshop.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/world.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/worldheritagesite.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/wrestling-2.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/x-ray.png">
+      <publishTime>08/12/2014 19:59:22</publishTime>
+    </File>
+    <File Include="images/sideicons/yoga.png">
+      <publishTime>08/12/2014 19:56:46</publishTime>
+    </File>
+    <File Include="images/sideicons/yooner.png">
+      <publishTime>08/12/2014 19:56:48</publishTime>
+    </File>
+    <File Include="images/sideicons/you-are-here-2.png">
+      <publishTime>08/12/2014 19:55:56</publishTime>
+    </File>
+    <File Include="images/sideicons/zoo.png">
+      <publishTime>08/12/2014 20:01:10</publishTime>
+    </File>
+    <File Include="images/siteicons/BSP_APPT_OP.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/BSP_APPT_RU.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/BSP_TOWN_OP.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/BSP_TOWN_RU.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/NEW_UNKNOWN.png">
+      <publishTime>08/10/2014 14:50:27</publishTime>
+    </File>
+    <File Include="images/siteicons/REG_OP.png">
+      <publishTime>09/15/2014 15:15:58</publishTime>
+    </File>
+    <File Include="images/siteicons/REG_UC.png">
+      <publishTime>09/15/2014 15:28:27</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_APPT_PR.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_APPT_UC.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_TOWN_PR.png">
+      <publishTime>09/10/2014 15:09:12</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_TOWN_UC.png">
+      <publishTime>09/10/2014 15:12:51</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_UKN_OP.png">
+      <publishTime>09/10/2014 15:09:13</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_UKN_PR.png">
+      <publishTime>09/10/2014 15:09:13</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_UKN_RU.png">
+      <publishTime>09/10/2014 15:09:13</publishTime>
+    </File>
+    <File Include="images/siteicons/SPD_UKN_UC.png">
+      <publishTime>09/10/2014 15:09:13</publishTime>
+    </File>
+    <File Include="images/siteicons/UNKOWN.png">
+      <publishTime>09/10/2014 15:09:13</publishTime>
+    </File>
+    <File Include="images/Sites.png">
+      <publishTime>08/26/2014 16:29:36</publishTime>
+    </File>
+    <File Include="images/slider.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/sliderThumb.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/sliderThumbs.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/SPD_HighRes-Print-33.jpg">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="images/thumb.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/Town_15px.png">
+      <publishTime>08/11/2014 20:35:51</publishTime>
+    </File>
+    <File Include="images/up.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy1.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy1_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy2.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy2_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy3.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy3_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy4.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy4_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/cloudy5.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/dunno.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/fog.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/fog_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/hail.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/light_rain.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/mist.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/mist_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/overcast.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/shower1.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/shower1_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/shower2.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/shower2_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/shower3.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/sleet.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow1.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow1_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow2.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow2_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow3.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow3_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow4.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/snow5.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/sunny.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/sunny_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/tstorm1.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/tstorm1_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/tstorm2.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/tstorm2_night.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/w/tstorm3.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="images/weather.png">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="js/bspIcons.js">
+      <publishTime>09/03/2014 10:19:49</publishTime>
+    </File>
+    <File Include="js/DemographicsInfo.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="js/LifestyleInfo.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="js/main.js">
+      <publishTime>07/29/2014 15:03:11</publishTime>
+    </File>
+    <File Include="js/nls/fr/resources.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="js/nls/resources.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="js/OAuthHelper.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="js/ProximityInfo.js">
+      <publishTime>09/03/2014 10:16:00</publishTime>
+    </File>
+    <File Include="js/sites.js">
+      <publishTime>08/11/2014 19:47:16</publishTime>
+    </File>
+    <File Include="js/template.js">
+      <publishTime>07/29/2014 15:11:48</publishTime>
+    </File>
+    <File Include="js/ui.js">
+      <publishTime>08/11/2014 14:49:37</publishTime>
+    </File>
+    <File Include="js/WeatherInfo.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="LandDev/.jshintrc">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/config/defaults.js">
+      <publishTime>09/05/2014 15:30:27</publishTime>
+    </File>
+    <File Include="LandDev/css/bootstrapmap.css">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/css/browseDialog.css">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/css/style.css">
+      <publishTime>09/05/2014 15:26:39</publishTime>
+    </File>
+    <File Include="LandDev/images/apple-touch-icon.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/default.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/item.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/logo.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/online-check.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/blue.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/brown.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/green.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/grey.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/orange.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/purple.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/red.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/pins/yellow.png">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/themes/cerulian.jpg">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/themes/cyborg.jpg">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/themes/darkly.jpg">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/themes/default.jpg">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/themes/journal.jpg">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/images/themes/readable.jpg">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/index.html">
+      <publishTime>09/05/2014 15:24:21</publishTime>
+    </File>
+    <File Include="LandDev/js/bootstrapmap.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/browseIdDlg.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/builder.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/dijit/templates/author.html">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/dijit/templates/BrowseIdDlg.html">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/dijit/templates/modal.html">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/dijit/templates/user.html">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/edit/attachmentsStore.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/edit/editsStore.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/edit/IndexedDBShim.min.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/edit/offline.min.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/edit/offlineFeaturesManager.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/edit/offlineOptions.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/grid.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/localStorageHelper.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/main.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/nls/builder.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/nls/resources.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/nls/user.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/OAuthHelper.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/OfflineSupport.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/PortalItemStore.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/RefreshMixin.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/ShareDialog.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/signInHelper.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/template.js">
+      <publishTime>09/05/2014 15:30:39</publishTime>
+    </File>
+    <File Include="LandDev/js/templateOptions.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/js/themes.js">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/license.txt">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="LandDev/README.md">
+      <publishTime>07/08/2014 16:21:51</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>09/17/2014 10:53:38</publishTime>
+    </File>
+    <File Include="resources/configurationPanel.js">
+      <publishTime>07/07/2014 06:37:50</publishTime>
+    </File>
+    <File Include="ServiceArea.aspx">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="services/BSPData.asmx">
+      <publishTime>07/02/2014 17:26:18</publishTime>
+    </File>
+    <File Include="SiteMap.html">
+      <publishTime>09/17/2014 10:53:25</publishTime>
+    </File>
+    <File Include="SPD.aspx">
+      <publishTime>07/02/2014 17:26:17</publishTime>
+    </File>
+    <File Include="styles/BSP.css">
+      <publishTime>07/09/2014 14:01:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/16/2014 10:01:03</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
